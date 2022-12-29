@@ -1,4 +1,4 @@
-- Gui to Lua
+-- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
@@ -29,7 +29,6 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 Frame.Position = UDim2.new(0.256107181, 0, 0.203125, 0)
 Frame.Size = UDim2.new(0.51142633, 0, 0.460336536, 0)
-Frame.Draggable = true
 
 UICorner.Parent = Frame
 
@@ -38,6 +37,7 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
 ScrollingFrame.Position = UDim2.new(0.0477657951, 0, 0.078328982, 0)
 ScrollingFrame.Size = UDim2.new(0, 591, 0, 330)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 436)
 
 UICorner_2.Parent = ScrollingFrame
 
@@ -158,5 +158,14 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
+script.Parent.MouseButton1Click:Connect(function()
+	if script.Parent.Text== "<" then
+		script.Parent.Text= ">"
+		script.Parent.Parent.Parent.ScreenGui.Frame.visible = false
+	else
+		script.Parent.Text= "<"
+		script.Parent.Parent.Parent.ScreenGui.Frame.visible = true
+	end
+end)
 
 UICorner_4.Parent = ClickFrame
