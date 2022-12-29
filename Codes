@@ -3,169 +3,171 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local Expliot = Instance.new("ScreenGui")
+local Menu = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
+local cr = Instance.new("TextLabel")
+local cre2 = Instance.new("TextLabel")
+local cre2_2 = Instance.new("TextLabel")
 local line = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 local line_2 = Instance.new("TextLabel")
-local TextBox = Instance.new("TextBox")
-local UICorner_3 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local ClickFrame = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local minisize = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Expliot.Name = "Expliot"
+Expliot.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-Frame.Position = UDim2.new(0.256107181, 0, 0.203125, 0)
-Frame.Size = UDim2.new(0.51142633, 0, 0.460336536, 0)
+Menu.Name = "Menu"
+Menu.Parent = Expliot
+Menu.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Menu.Position = UDim2.new(0.292356193, 0, 0.175480768, 0)
+Menu.Size = UDim2.new(0.524822712, 0, 0.441105783, 0)
+Menu.Draggable = true
+UICorner.Parent = Menu
 
-UICorner.Parent = Frame
-
-ScrollingFrame.Parent = Frame
+ScrollingFrame.Parent = Menu
 ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
-ScrollingFrame.Position = UDim2.new(0.0477657951, 0, 0.078328982, 0)
-ScrollingFrame.Size = UDim2.new(0, 591, 0, 330)
-ScrollingFrame.CanvasPosition = Vector2.new(0, 436)
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+ScrollingFrame.Position = UDim2.new(0.0120120123, 0, 0.0299727526, 0)
+ScrollingFrame.Size = UDim2.new(0.729729712, 0, 0.907356977, 0)
 
-UICorner_2.Parent = ScrollingFrame
+cr.Name = "cr"
+cr.Parent = Menu
+cr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cr.BackgroundTransparency = 1.000
+cr.Position = UDim2.new(0.741741717, 0, 0.0299727526, 0)
+cr.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
+cr.Font = Enum.Font.SourceSansBold
+cr.Text = "Credits"
+cr.TextColor3 = Color3.fromRGB(12, 255, 247)
+cr.TextScaled = true
+cr.TextSize = 14.000
+cr.TextWrapped = true
 
-TextLabel.Parent = ScrollingFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0, 0, 0.446475178, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.Unknown
-TextLabel.Text = "Credits :"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+cre2.Name = "cre2"
+cre2.Parent = Menu
+cre2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cre2.BackgroundTransparency = 1.000
+cre2.Position = UDim2.new(0.741741717, 0, 0.174386919, 0)
+cre2.Size = UDim2.new(0.196696699, 0, 0.0926430523, 0)
+cre2.Font = Enum.Font.SourceSansBold
+cre2.Text = "ui : dewdososmall"
+cre2.TextColor3 = Color3.fromRGB(12, 255, 247)
+cre2.TextScaled = true
+cre2.TextSize = 14.000
+cre2.TextWrapped = true
 
-TextLabel_2.Parent = ScrollingFrame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0, 0, 0.54916513, 0)
-TextLabel_2.Size = UDim2.new(0, 290, 0, 50)
-TextLabel_2.Font = Enum.Font.Unknown
-TextLabel_2.Text = "UI by dewdososmall"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-TextLabel_3.Parent = ScrollingFrame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0, 0, 0.606606364, 0)
-TextLabel_3.Size = UDim2.new(0, 290, 0, 50)
-TextLabel_3.Font = Enum.Font.Unknown
-TextLabel_3.Text = "Name by phum phum shop"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
+cre2_2.Name = "cre2"
+cre2_2.Parent = Menu
+cre2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cre2_2.BackgroundTransparency = 1.000
+cre2_2.Position = UDim2.new(0.741741717, 0, 0.250681192, 0)
+cre2_2.Size = UDim2.new(0.196696699, 0, 0.0926430523, 0)
+cre2_2.Font = Enum.Font.SourceSansBold
+cre2_2.Text = "name : phum phum shop"
+cre2_2.TextColor3 = Color3.fromRGB(75, 255, 25)
+cre2_2.TextScaled = true
+cre2_2.TextSize = 14.000
+cre2_2.TextWrapped = true
 
 line.Name = "line"
-line.Parent = ScrollingFrame
+line.Parent = Menu
 line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 line.BackgroundTransparency = 1.000
-line.Position = UDim2.new(0, 0, 0.372576684, 0)
-line.Size = UDim2.new(0, 579, 0, 50)
-line.Font = Enum.Font.Unknown
-line.Text = "----------------------------------"
+line.Position = UDim2.new(0.741741717, 0, 0.343324244, 0)
+line.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
+line.Font = Enum.Font.SourceSansBold
+line.Text = "-----------------------"
 line.TextColor3 = Color3.fromRGB(255, 255, 255)
 line.TextScaled = true
 line.TextSize = 14.000
 line.TextWrapped = true
 
+TextLabel.Parent = Menu
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.755255222, 0, 0.435967296, 0)
+TextLabel.Size = UDim2.new(0.196696699, 0, 0.0926430523, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "ถามหาดิสหรอ ... กุบิด"
+TextLabel.TextColor3 = Color3.fromRGB(255, 61, 252)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
 line_2.Name = "line"
-line_2.Parent = ScrollingFrame
+line_2.Parent = Menu
 line_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 line_2.BackgroundTransparency = 1.000
-line_2.Position = UDim2.new(0, 0, 0.657171965, 0)
-line_2.Size = UDim2.new(0, 579, 0, 50)
-line_2.Font = Enum.Font.Unknown
-line_2.Text = "----------------------------------"
+line_2.Position = UDim2.new(0.741741717, 0, 0.122615799, 0)
+line_2.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
+line_2.Font = Enum.Font.SourceSansBold
+line_2.Text = "-----------------------"
 line_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 line_2.TextScaled = true
 line_2.TextSize = 14.000
 line_2.TextWrapped = true
 
-TextBox.Parent = ScrollingFrame
-TextBox.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-TextBox.Position = UDim2.new(0.0659898445, 0, 0.818909705, 0)
-TextBox.Size = UDim2.new(0, 509, 0, 50)
-TextBox.ClearTextOnFocus = false
-TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = "https://discord.gg/4aBm9dHUXe"
-TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.TextScaled = true
-TextBox.TextSize = 14.000
-TextBox.TextWrapped = true
+TextLabel_2.Parent = Menu
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, -0.136239782, 0)
+TextLabel_2.Size = UDim2.new(0, 511, 0, 50)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "phum phum shop x $nipe"
+TextLabel_2.TextColor3 = Color3.fromRGB(214, 189, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
 
-UICorner_3.Parent = TextBox
+minisize.Name = "minisize"
+minisize.Parent = Expliot
+minisize.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+minisize.Position = UDim2.new(0.817178905, 0, 0.175480768, 0)
+minisize.Size = UDim2.new(0.0244286805, 0, 0.441105783, 0)
 
-TextLabel_4.Parent = ScrollingFrame
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 2.000
-TextLabel_4.Position = UDim2.new(0.065989852, 0, 0.721932113, 0)
-TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_4.Font = Enum.Font.ArialBold
-TextLabel_4.Text = "Discord"
-TextLabel_4.TextColor3 = Color3.fromRGB(19, 94, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
+UICorner_2.Parent = minisize
 
-TextLabel_5.Parent = Frame
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.0477657951, 0, -0.0522193201, 0)
-TextLabel_5.Size = UDim2.new(0, 307, 0, 50)
-TextLabel_5.Font = Enum.Font.ArialBold
-TextLabel_5.Text = "Phum Phum Shop"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
-
-ClickFrame.Name = "ClickFrame"
-ClickFrame.Parent = ScreenGui
-ClickFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ClickFrame.Position = UDim2.new(0.256107181, 0, 0.239182696, 0)
-ClickFrame.Size = UDim2.new(0.0244286843, 0, 0.384615362, 0)
-
-TextButton.Parent = ClickFrame
+TextButton.Parent = minisize
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0, 0, -4.76837201e-08, 0)
-TextButton.Size = UDim2.new(0, 31, 0, 320)
+TextButton.Size = UDim2.new(1, 0, 0.970899463, 0)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "<"
+TextButton.Text = ">"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 script.Parent.MouseButton1Click:Connect(function()
-	if script.Parent.Text== "<" then
-		script.Parent.Text= ">"
-		script.Parent.Parent.Parent.ScreenGui.Frame.visible = false
-	else
+	if script.Parent.Text== ">" then
 		script.Parent.Text= "<"
-		script.Parent.Parent.Parent.ScreenGui.Frame.visible = true
+		script.Parent.Parent.Parent.Expliot.Menu.visible = false
+	else
+		script.Parent.Text= ">"
+		script.Parent.Parent.Parent.Expliot.Menu.visible = true
 	end
 end)
 
-UICorner_4.Parent = ClickFrame
+Frame.Parent = Expliot
+Frame.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Frame.Position = UDim2.new(0.292356193, 0, 0.603365421, 0)
+Frame.Size = UDim2.new(0.524822712, 0, 0.013221154, 0)
+
+UICorner_3.Parent = Frame
+
+Frame_2.Parent = Expliot
+Frame_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Frame_2.Position = UDim2.new(0.292356193, 0, 0.17427887, 0)
+Frame_2.Size = UDim2.new(0.524822712, 0, 0.013221154, 0)
+
+UICorner_4.Parent = Frame_2
