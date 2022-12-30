@@ -1,7 +1,18 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local Expliot = Instance.new("ScreenGui")
 local Menu = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ESp = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 local cr = Instance.new("TextLabel")
 local cre2 = Instance.new("TextLabel")
 local cre2_2 = Instance.new("TextLabel")
@@ -10,12 +21,12 @@ local TextLabel = Instance.new("TextLabel")
 local line_2 = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local minisize = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local Frame_2 = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 
 --Properties:
 
@@ -35,6 +46,48 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 ScrollingFrame.Position = UDim2.new(0.0120120123, 0, 0.0299727526, 0)
 ScrollingFrame.Size = UDim2.new(0.729729712, 0, 0.907356977, 0)
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+TextButton.Size = UDim2.new(0.117283948, 0, 0.0702944472, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Speed : 50"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_2.Parent = TextButton
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+TextButton_2.Position = UDim2.new(0.129629627, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0.117283948, 0, 0.0702944472, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "noclip"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_3.Parent = TextButton_2
+
+ESp.Name = "ESp"
+ESp.Parent = ScrollingFrame
+ESp.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+ESp.Position = UDim2.new(0.269547343, 0, -0.0013623978, 0)
+ESp.Size = UDim2.new(0.117283948, 0, 0.0702944472, 0)
+ESp.Font = Enum.Font.SourceSans
+ESp.Text = "chat bypass"
+ESp.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESp.TextScaled = true
+ESp.TextSize = 14.000
+ESp.TextWrapped = true
+script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/daddysyn/synergy/additional/betterbypasser",true))()
+end)
+
+UICorner_4.Parent = ESp
 
 cr.Name = "cr"
 cr.Parent = Menu
@@ -124,97 +177,36 @@ TextLabel_2.TextColor3 = Color3.fromRGB(214, 189, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
-local text = script.Parent
-local add = 10
-wait(1)
-local k = 1
-while k <= 255 do
-	text.TextColor3 = Color3.new(k/255,0/255,0/255)
-	k = k + add
-	wait()
-end
-while true do
-	k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(255/255,k/255,0/255)
-		k = k + add
-		wait()
-	end
-	k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-		k = k + add
-		wait()
-	end
-	k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(0/255,255/255,k/255)
-		k = k + add
-		wait()
-	end
-	k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-		k = k + add
-		wait()
-	end
-	k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(k/255,0/255,255/255)
-		k = k + add
-		wait()
-	end
-	k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-		k = k + add
-		wait()
-	end
-	while k <= 255 do
-		text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-		k = k + add
-		wait()
-	end
-end
 
 minisize.Name = "minisize"
 minisize.Parent = Expliot
 minisize.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 minisize.Position = UDim2.new(0.817178905, 0, 0.175480768, 0)
 minisize.Size = UDim2.new(0.0244286805, 0, 0.441105783, 0)
+minisize.Draggable = true
+UICorner_5.Parent = minisize
 
-UICorner_2.Parent = minisize
-
-TextButton.Parent = minisize
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Size = UDim2.new(1, 0, 0.970899463, 0)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = ">"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-script.Parent.MouseButton1Click:Connect(function()
-	if script.Parent.Text== ">" then
-		script.Parent.Text= "<"
-		script.Parent.Parent.Parent.Expliot.Menu.visible = false
-	else
-		script.Parent.Text= ">"
-		script.Parent.Parent.Parent.Expliot.Menu.visible = true
-	end
-end)
+TextButton_3.Parent = minisize
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Size = UDim2.new(1, 0, 0.970899463, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ">"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
 
 Frame.Parent = Expliot
 Frame.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 Frame.Position = UDim2.new(0.292356193, 0, 0.603365421, 0)
 Frame.Size = UDim2.new(0.524822712, 0, 0.013221154, 0)
 
-UICorner_3.Parent = Frame
+UICorner_6.Parent = Frame
 
 Frame_2.Parent = Expliot
 Frame_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 Frame_2.Position = UDim2.new(0.292356193, 0, 0.17427887, 0)
 Frame_2.Size = UDim2.new(0.524822712, 0, 0.013221154, 0)
 
-UICorner_4.Parent = Frame_2
+UICorner_7.Parent = Frame_2
