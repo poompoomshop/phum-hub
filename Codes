@@ -6,27 +6,29 @@
 local Expliot = Instance.new("ScreenGui")
 local Menu = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextButton = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local TextButton_2 = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local ESp = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
 local cr = Instance.new("TextLabel")
 local cre2 = Instance.new("TextLabel")
 local cre2_2 = Instance.new("TextLabel")
-local line = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
+local line = Instance.new("TextLabel")
 local line_2 = Instance.new("TextLabel")
+local line_3 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local GodHalo = Instance.new("TextButton")
+local GodChestplate = Instance.new("TextButton")
+local GodLegs = Instance.new("TextButton")
+local VoidGreaves = Instance.new("TextButton")
+local VoidChestplate = Instance.new("TextButton")
+local VoidShroud = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local minisize = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local TextButton_3 = Instance.new("TextButton")
-local Frame = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local Menu2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local TextLabel_4 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -36,58 +38,10 @@ Expliot.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Menu.Name = "Menu"
 Menu.Parent = Expliot
 Menu.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Menu.Position = UDim2.new(0.292356193, 0, 0.175480768, 0)
-Menu.Size = UDim2.new(0.524822712, 0, 0.441105783, 0)
-Menu.Draggable = true
+Menu.Position = UDim2.new(0.0260047279, 0, 0.575721145, 0)
+Menu.Size = UDim2.new(0.338849485, 0, 0.269230783, 0)
+
 UICorner.Parent = Menu
-
-ScrollingFrame.Parent = Menu
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-ScrollingFrame.Position = UDim2.new(0.0120120123, 0, 0.0299727526, 0)
-ScrollingFrame.Size = UDim2.new(0.729729712, 0, 0.907356977, 0)
-
-TextButton.Parent = ScrollingFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
-TextButton.Size = UDim2.new(0.117283948, 0, 0.0702944472, 0)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Speed : 50"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-
-UICorner_2.Parent = TextButton
-
-TextButton_2.Parent = ScrollingFrame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
-TextButton_2.Position = UDim2.new(0.129629627, 0, 0, 0)
-TextButton_2.Size = UDim2.new(0.117283948, 0, 0.0702944472, 0)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "noclip"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextWrapped = true
-
-UICorner_3.Parent = TextButton_2
-
-ESp.Name = "ESp"
-ESp.Parent = ScrollingFrame
-ESp.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
-ESp.Position = UDim2.new(0.269547343, 0, -0.0013623978, 0)
-ESp.Size = UDim2.new(0.117283948, 0, 0.0702944472, 0)
-ESp.Font = Enum.Font.SourceSans
-ESp.Text = "chat bypass"
-ESp.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESp.TextScaled = true
-ESp.TextSize = 14.000
-ESp.TextWrapped = true
-script.Parent.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/daddysyn/synergy/additional/betterbypasser",true))()
-end)
-
-UICorner_4.Parent = ESp
 
 cr.Name = "cr"
 cr.Parent = Menu
@@ -128,19 +82,6 @@ cre2_2.TextScaled = true
 cre2_2.TextSize = 14.000
 cre2_2.TextWrapped = true
 
-line.Name = "line"
-line.Parent = Menu
-line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-line.BackgroundTransparency = 1.000
-line.Position = UDim2.new(0.741741717, 0, 0.343324244, 0)
-line.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
-line.Font = Enum.Font.SourceSansBold
-line.Text = "-----------------------"
-line.TextColor3 = Color3.fromRGB(255, 255, 255)
-line.TextScaled = true
-line.TextSize = 14.000
-line.TextWrapped = true
-
 TextLabel.Parent = Menu
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
@@ -153,11 +94,24 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
+line.Name = "line"
+line.Parent = Menu
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.BackgroundTransparency = 1.000
+line.Position = UDim2.new(0.741741717, 0, 0.122615799, 0)
+line.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
+line.Font = Enum.Font.SourceSansBold
+line.Text = "-----------------------"
+line.TextColor3 = Color3.fromRGB(255, 255, 255)
+line.TextScaled = true
+line.TextSize = 14.000
+line.TextWrapped = true
+
 line_2.Name = "line"
 line_2.Parent = Menu
 line_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 line_2.BackgroundTransparency = 1.000
-line_2.Position = UDim2.new(0.741741717, 0, 0.122615799, 0)
+line_2.Position = UDim2.new(0.741741717, 0, 0.343324244, 0)
 line_2.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
 line_2.Font = Enum.Font.SourceSansBold
 line_2.Text = "-----------------------"
@@ -166,14 +120,106 @@ line_2.TextScaled = true
 line_2.TextSize = 14.000
 line_2.TextWrapped = true
 
+line_3.Name = "line"
+line_3.Parent = Menu
+line_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line_3.BackgroundTransparency = 1.000
+line_3.Position = UDim2.new(0.741741717, 0, 0.524401486, 0)
+line_3.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
+line_3.Font = Enum.Font.SourceSansBold
+line_3.Text = "-----------------------"
+line_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+line_3.TextScaled = true
+line_3.TextSize = 14.000
+line_3.TextWrapped = true
+
+ScrollingFrame.Parent = Menu
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.171795964, 0)
+ScrollingFrame.Size = UDim2.new(0.725581408, 0, 0.757359564, 0)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 278.351471)
+
+GodHalo.Name = "GodHalo"
+GodHalo.Parent = ScrollingFrame
+GodHalo.BackgroundColor3 = Color3.fromRGB(255, 249, 87)
+GodHalo.Position = UDim2.new(0.0533333346, 0, 0.00408811308, 0)
+GodHalo.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
+GodHalo.Font = Enum.Font.SourceSans
+GodHalo.Text = "GodHalo"
+GodHalo.TextColor3 = Color3.fromRGB(0, 0, 0)
+GodHalo.TextScaled = true
+GodHalo.TextSize = 14.000
+GodHalo.TextWrapped = true
+
+GodChestplate.Name = "GodChestplate"
+GodChestplate.Parent = ScrollingFrame
+GodChestplate.BackgroundColor3 = Color3.fromRGB(255, 249, 87)
+GodChestplate.Position = UDim2.new(0.0533333346, 0, 0.0554273985, 0)
+GodChestplate.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
+GodChestplate.Font = Enum.Font.SourceSans
+GodChestplate.Text = "GodChestplate"
+GodChestplate.TextColor3 = Color3.fromRGB(0, 0, 0)
+GodChestplate.TextScaled = true
+GodChestplate.TextSize = 14.000
+GodChestplate.TextWrapped = true
+
+GodLegs.Name = "GodLegs"
+GodLegs.Parent = ScrollingFrame
+GodLegs.BackgroundColor3 = Color3.fromRGB(255, 249, 87)
+GodLegs.Position = UDim2.new(0.0533333346, 0, 0.106766678, 0)
+GodLegs.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
+GodLegs.Font = Enum.Font.SourceSans
+GodLegs.Text = "GodLegs"
+GodLegs.TextColor3 = Color3.fromRGB(0, 0, 0)
+GodLegs.TextScaled = true
+GodLegs.TextSize = 14.000
+GodLegs.TextWrapped = true
+
+VoidGreaves.Name = "VoidGreaves"
+VoidGreaves.Parent = ScrollingFrame
+VoidGreaves.BackgroundColor3 = Color3.fromRGB(126, 66, 255)
+VoidGreaves.Position = UDim2.new(0.0533333346, 0, 0.220605969, 0)
+VoidGreaves.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
+VoidGreaves.Font = Enum.Font.SourceSans
+VoidGreaves.Text = "VoidGreaves"
+VoidGreaves.TextColor3 = Color3.fromRGB(0, 0, 0)
+VoidGreaves.TextScaled = true
+VoidGreaves.TextSize = 14.000
+VoidGreaves.TextWrapped = true
+
+VoidChestplate.Name = "VoidChestplate"
+VoidChestplate.Parent = ScrollingFrame
+VoidChestplate.BackgroundColor3 = Color3.fromRGB(126, 66, 255)
+VoidChestplate.Position = UDim2.new(0.0533333346, 0, 0.271945268, 0)
+VoidChestplate.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
+VoidChestplate.Font = Enum.Font.SourceSans
+VoidChestplate.Text = "VoidChestplate"
+VoidChestplate.TextColor3 = Color3.fromRGB(0, 0, 0)
+VoidChestplate.TextScaled = true
+VoidChestplate.TextSize = 14.000
+VoidChestplate.TextWrapped = true
+
+VoidShroud.Name = "VoidShroud"
+VoidShroud.Parent = ScrollingFrame
+VoidShroud.BackgroundColor3 = Color3.fromRGB(126, 66, 255)
+VoidShroud.Position = UDim2.new(0.0533333346, 0, 0.323284566, 0)
+VoidShroud.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
+VoidShroud.Font = Enum.Font.SourceSans
+VoidShroud.Text = "VoidShroud"
+VoidShroud.TextColor3 = Color3.fromRGB(0, 0, 0)
+VoidShroud.TextScaled = true
+VoidShroud.TextSize = 14.000
+VoidShroud.TextWrapped = true
+
 TextLabel_2.Parent = Menu
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0, 0, -0.136239782, 0)
-TextLabel_2.Size = UDim2.new(0, 511, 0, 50)
-TextLabel_2.Font = Enum.Font.Unknown
-TextLabel_2.Text = "phum phum shop x $nipe"
-TextLabel_2.TextColor3 = Color3.fromRGB(214, 189, 0)
+TextLabel_2.Position = UDim2.new(0.200000003, 0, -0.0133928563, 0)
+TextLabel_2.Size = UDim2.new(0.330232531, 0, 0.171795964, 0)
+TextLabel_2.Font = Enum.Font.SourceSansSemibold
+TextLabel_2.Text = "ชุดเกราะ"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
@@ -181,32 +227,113 @@ TextLabel_2.TextWrapped = true
 minisize.Name = "minisize"
 minisize.Parent = Expliot
 minisize.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+minisize.BackgroundTransparency = 1.000
 minisize.Position = UDim2.new(0.817178905, 0, 0.175480768, 0)
 minisize.Size = UDim2.new(0.0244286805, 0, 0.441105783, 0)
-minisize.Draggable = true
-UICorner_5.Parent = minisize
 
-TextButton_3.Parent = minisize
-TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.BackgroundTransparency = 1.000
-TextButton_3.Size = UDim2.new(1, 0, 0.970899463, 0)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = ">"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextScaled = true
-TextButton_3.TextSize = 14.000
-TextButton_3.TextWrapped = true
+UICorner_2.Parent = minisize
 
-Frame.Parent = Expliot
-Frame.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-Frame.Position = UDim2.new(0.292356193, 0, 0.603365421, 0)
-Frame.Size = UDim2.new(0.524822712, 0, 0.013221154, 0)
+TextButton.Parent = minisize
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(-18.5161304, 0, 0.907356977, 0)
+TextButton.Size = UDim2.new(1, 0, 0.610354304, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ">"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
-UICorner_6.Parent = Frame
+Menu2.Name = "Menu2"
+Menu2.Parent = Expliot
+Menu2.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Menu2.Position = UDim2.new(0.0260047317, 0, 0.292067289, 0)
+Menu2.Size = UDim2.new(0.338849485, 0, 0.269230783, 0)
 
-Frame_2.Parent = Expliot
-Frame_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-Frame_2.Position = UDim2.new(0.292356193, 0, 0.17427887, 0)
-Frame_2.Size = UDim2.new(0.524822712, 0, 0.013221154, 0)
+UICorner_3.Parent = Menu2
 
-UICorner_7.Parent = Frame_2
+TextLabel_3.Parent = Menu2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.0581395365, 0, -0.225525439, 0)
+TextLabel_3.Size = UDim2.new(0, 464, 0, 50)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "phum phum HUB"
+TextLabel_3.TextColor3 = Color3.fromRGB(214, 189, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+ScrollingFrame_2.Parent = Menu2
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+ScrollingFrame_2.Position = UDim2.new(0, 0, 0.171795964, 0)
+ScrollingFrame_2.Size = UDim2.new(0.725581408, 0, 0.757359564, 0)
+
+TextLabel_4.Parent = Menu2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.200000003, 0, -0.0133928563, 0)
+TextLabel_4.Size = UDim2.new(0.330232531, 0, 0.171795964, 0)
+TextLabel_4.Font = Enum.Font.SourceSansSemibold
+TextLabel_4.Text = "รออัพเดท"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+
+
+
+TextButton.MouseButton1Click:Connect(function()
+	if TextButton.Parent.Text== ">" then
+		TextButton.Parent.Text= "<"
+		TextButton.Parent.Parent.Parent.Menu.visible = false
+		TextButton.Parent.Parent.Parent.Menu2.visible = false
+	else
+		TextButton.Parent.Text= ">"
+		TextButton.Parent.Parent.Parent.Menu.visible = true
+		TextButton.Parent.Parent.Parent.Menu2.visible = true
+	end
+end)
+
+
+
+--tool
+
+GodHalo.MouseButton1Click:connect(function()
+	local A_1   = "God Halo"
+	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+	Event:FireServer(A_1)
+end)
+
+GodChestplate.MouseButton1Click:connect(function()
+	local A_1   = "God Chestplate"
+	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+	Event:FireServer(A_1)
+end)
+
+GodLegs.MouseButton1Click:connect(function()
+	local A_1   = "God Legs"
+	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+	Event:FireServer(A_1)
+end)
+
+VoidGreaves.MouseButton1Click:connect(function()
+	local A_1   = "Void Greaves"
+	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+	Event:FireServer(A_1)
+end)
+
+VoidChestplate.MouseButton1Click:connect(function()
+	local A_1   = "Void Chestplate"
+	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+	Event:FireServer(A_1)
+end)
+
+VoidShroud.MouseButton1Click:connect(function()
+	local A_1   = "Void Shroud"
+	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
+	Event:FireServer(A_1)
+end)
