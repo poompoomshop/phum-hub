@@ -548,7 +548,7 @@ HideUI.MouseButton1Click:Connect(function()
 end)
 ---------- HIDE UI TYPE FOR OPEN
 booga.MouseButton1Click:Connect(function()
-	script.Parent.Parent.Parent.Menu.visible = true
-	script.Parent.Parent.Parent.Menu2.visible = true
-	script.Parent.Parent.Parent.lol.visible = false
+	Menu.Visible = true
+	Menu2.Visible = true
+	lol.visible = false
 end)
