@@ -50,7 +50,7 @@ local cr_2 = Instance.new("TextLabel")
 
 Expliot.Name = "Expliot"
 Expliot.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Expliot.Enabled = false
+Expliot.Enabled = true
 
 Menu.Name = "Menu"
 Menu.Parent = Expliot
