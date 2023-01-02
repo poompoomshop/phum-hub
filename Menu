@@ -550,5 +550,5 @@ end)
 booga.MouseButton1Click:Connect(function()
 	Menu.Visible = true
 	Menu2.Visible = true
-	lol.visible = false
+	lol.visible = true
 end)
