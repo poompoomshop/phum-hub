@@ -3,20 +3,10 @@
 
 -- Instances:
 
-local Choose = Instance.new("ScreenGui")
-local lol = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local lock = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local booga = Instance.new("ImageButton")
-local UICorner_3 = Instance.new("UICorner")
-local title = Instance.new("TextLabel")
-local title_2 = Instance.new("TextLabel")
-local cr = Instance.new("TextLabel")
 local Expliot = Instance.new("ScreenGui")
 local Menu = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local cr_2 = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local cr = Instance.new("TextLabel")
 local cre2 = Instance.new("TextLabel")
 local cre2_2 = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
@@ -32,92 +22,34 @@ local VoidChestplate = Instance.new("TextButton")
 local VoidShroud = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local minisize = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local HideUI = Instance.new("ImageButton")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local Menu2 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local craftitem = Instance.new("TextBox")
 local craft = Instance.new("TextButton")
 local Aimbot = Instance.new("TextButton")
 local VoidTP = Instance.new("TextButton")
+local Choose = Instance.new("ScreenGui")
+local lol = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local lock = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local booga = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local title_2 = Instance.new("TextLabel")
+local cr_2 = Instance.new("TextLabel")
 
 --Properties:
 
-Choose.Name = "Choose"
-Choose.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Choose.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Choose.draggable = true
-
-lol.Name = "lol"
-lol.Parent = Choose
-lol.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-lol.Position = UDim2.new(0.348305762, 0, 0.337740391, 0)
-lol.Size = UDim2.new(0.349093765, 0, 0.31249997, 0)
-
-UICorner.Parent = lol
-
-lock.Name = "lock"
-lock.Parent = lol
-lock.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-lock.Position = UDim2.new(0.0616238751, 0, 0.0877403915, 0)
-lock.Size = UDim2.new(0.881825209, 0, 0.847115278, 0)
-
-UICorner_2.Parent = lock
-
-booga.Name = "booga"
-booga.Parent = lock
-booga.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-booga.Position = UDim2.new(0.0401208699, 0, 0.255880415, 0)
-booga.Size = UDim2.new(0, 100, 0, 100)
-booga.Image = "http://www.roblox.com/asset/?id=12003428375"
-
-UICorner_3.Parent = booga
-
-title.Name = "title"
-title.Parent = lock
-title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title.BackgroundTransparency = 1.000
-title.Position = UDim2.new(0.325296938, 0, -0.104426816, 0)
-title.Size = UDim2.new(0.406382591, 0, 0.18076925, 0)
-title.Font = Enum.Font.Bangers
-title.Text = "เลือก แฮกที่ต้องการ"
-title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextScaled = true
-title.TextSize = 14.000
-title.TextWrapped = true
-
-title_2.Name = "title"
-title_2.Parent = lock
-title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_2.BackgroundTransparency = 1.000
-title_2.Position = UDim2.new(0.0534860864, 0, 0.706622779, 0)
-title_2.Size = UDim2.new(0.225733668, 0, 0.18076925, 0)
-title_2.Font = Enum.Font.Bangers
-title_2.Text = "booga แฮกพื้นฐาน"
-title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_2.TextScaled = true
-title_2.TextSize = 14.000
-title_2.TextWrapped = true
-
-cr.Name = "cr"
-cr.Parent = lock
-cr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-cr.BackgroundTransparency = 1.000
-cr.Position = UDim2.new(0.279219717, 0, 0.885357797, 0)
-cr.Size = UDim2.new(0.406382591, 0, 0.18076925, 0)
-cr.Font = Enum.Font.Bangers
-cr.Text = "BY Phum Phum Hub"
-cr.TextColor3 = Color3.fromRGB(255, 255, 255)
-cr.TextScaled = true
-cr.TextSize = 14.000
-cr.TextWrapped = true
-
 Expliot.Name = "Expliot"
 Expliot.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Expliot.Enabled = true
 Expliot.Draggable = true
 
 Menu.Name = "Menu"
@@ -126,21 +58,20 @@ Menu.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 Menu.Position = UDim2.new(0.0260047279, 0, 0.575721145, 0)
 Menu.Size = UDim2.new(0.338849485, 0, 0.269230783, 0)
 Menu.Visible = false
+UICorner.Parent = Menu
 
-UICorner_4.Parent = Menu
-
-cr_2.Name = "cr"
-cr_2.Parent = Menu
-cr_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-cr_2.BackgroundTransparency = 1.000
-cr_2.Position = UDim2.new(0.741741717, 0, 0.0299727526, 0)
-cr_2.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
-cr_2.Font = Enum.Font.SourceSansBold
-cr_2.Text = "Credits"
-cr_2.TextColor3 = Color3.fromRGB(12, 255, 247)
-cr_2.TextScaled = true
-cr_2.TextSize = 14.000
-cr_2.TextWrapped = true
+cr.Name = "cr"
+cr.Parent = Menu
+cr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cr.BackgroundTransparency = 1.000
+cr.Position = UDim2.new(0.741741717, 0, 0.0299727526, 0)
+cr.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
+cr.Font = Enum.Font.SourceSansBold
+cr.Text = "Credits"
+cr.TextColor3 = Color3.fromRGB(12, 255, 247)
+cr.TextScaled = true
+cr.TextSize = 14.000
+cr.TextWrapped = true
 
 cre2.Name = "cre2"
 cre2.Parent = Menu
@@ -316,8 +247,9 @@ minisize.BackgroundTransparency = 1.000
 minisize.Position = UDim2.new(0.364854246, 0, 0.575721204, 0)
 minisize.Size = UDim2.new(0.0788021684, 0, 0.117375813, 0)
 minisize.Visible = false
-
-UICorner_5.Parent = minisize
+minisize.Draggable = true
+minisize.Draggable = true
+UICorner_2.Parent = minisize
 
 HideUI.Name = "HideUI"
 HideUI.Parent = minisize
@@ -325,7 +257,7 @@ HideUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HideUI.Size = UDim2.new(0, 100, 0, 100)
 HideUI.Image = "http://www.roblox.com/asset/?id=12003428375"
 
-UICorner_6.Parent = HideUI
+UICorner_3.Parent = HideUI
 
 Menu2.Name = "Menu2"
 Menu2.Parent = Expliot
@@ -333,9 +265,9 @@ Menu2.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 Menu2.Position = UDim2.new(0.0386130847, 0, 0.294471145, 0)
 Menu2.Size = UDim2.new(0.338849485, 0, 0.269230783, 0)
 Menu2.Visible = false
+Menu2.Draggable = true
 
-
-UICorner_7.Parent = Menu2
+UICorner_4.Parent = Menu2
 
 TextLabel_3.Parent = Menu2
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
@@ -349,7 +281,7 @@ TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-UICorner_8.Parent = TextLabel_3
+UICorner_5.Parent = TextLabel_3
 
 TextLabel_4.Parent = Menu2
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -410,7 +342,77 @@ VoidTP.TextColor3 = Color3.fromRGB(0, 0, 0)
 VoidTP.TextScaled = true
 VoidTP.TextSize = 14.000
 VoidTP.TextWrapped = true
------------
+
+Choose.Name = "Choose"
+Choose.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Choose.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Choose.Draggable = true
+
+
+lol.Name = "lol"
+lol.Parent = Choose
+lol.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+lol.Position = UDim2.new(0.348305762, 0, 0.337740391, 0)
+lol.Size = UDim2.new(0.349093765, 0, 0.31249997, 0)
+lol.Draggable = true
+UICorner_6.Parent = lol
+
+lock.Name = "lock"
+lock.Parent = lol
+lock.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+lock.Position = UDim2.new(0.0616238751, 0, 0.0877403915, 0)
+lock.Size = UDim2.new(0.881825209, 0, 0.847115278, 0)
+
+UICorner_7.Parent = lock
+
+booga.Name = "booga"
+booga.Parent = lock
+booga.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+booga.Position = UDim2.new(0.0401208699, 0, 0.255880415, 0)
+booga.Size = UDim2.new(0, 100, 0, 100)
+booga.Image = "http://www.roblox.com/asset/?id=12003428375"
+
+UICorner_8.Parent = booga
+
+title.Name = "title"
+title.Parent = lock
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.325296938, 0, -0.104426816, 0)
+title.Size = UDim2.new(0.406382591, 0, 0.18076925, 0)
+title.Font = Enum.Font.Bangers
+title.Text = "เลือก แฮกที่ต้องการ"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+title_2.Name = "title"
+title_2.Parent = lock
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.Position = UDim2.new(0.0534860864, 0, 0.706622779, 0)
+title_2.Size = UDim2.new(0.225733668, 0, 0.18076925, 0)
+title_2.Font = Enum.Font.Bangers
+title_2.Text = "booga แฮกพื้นฐาน"
+title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_2.TextScaled = true
+title_2.TextSize = 14.000
+title_2.TextWrapped = true
+
+cr_2.Name = "cr"
+cr_2.Parent = lock
+cr_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cr_2.BackgroundTransparency = 1.000
+cr_2.Position = UDim2.new(0.279219717, 0, 0.885357797, 0)
+cr_2.Size = UDim2.new(0.406382591, 0, 0.18076925, 0)
+cr_2.Font = Enum.Font.Bangers
+cr_2.Text = "BY Phum Phum Hub"
+cr_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+cr_2.TextScaled = true
+cr_2.TextSize = 14.000
+cr_2.TextWrapped = true
+---------
 GodHalo.MouseButton1Click:connect(function()
 	local A_1   = "God Halo"
 	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
@@ -535,12 +537,12 @@ Aimbot.MouseButton1Click:connect(function()
 end)
 ---------- HIDE UI TYPE FOR MENU
 HideUI.MouseButton1Click:Connect(function()
-	if HideUI.Parent.Text== "" then
-		HideUI.Parent.Text= ""
+	if HideUI.Parent.Text== ">" then
+		HideUI.Parent.Text= "<"
 		HideUI.Parent.Parent.Parent.Menu.visible = false
 		HideUI.Parent.Parent.Parent.Menu2.visible = false
 	else
-		HideUI.Parent.Text= ""
+		HideUI.Parent.Text= ">"
 		HideUI.Parent.Parent.Parent.Menu.visible = true
 		HideUI.Parent.Parent.Parent.Menu2.visible = true
 	end
@@ -549,5 +551,5 @@ end)
 booga.MouseButton1Click:Connect(function()
 	Menu.Visible = true
 	Menu2.Visible = true
-	lol.visible = false
+	lol.visible = true
 end)
