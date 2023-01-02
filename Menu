@@ -50,7 +50,6 @@ local VoidTP = Instance.new("TextButton")
 Choose.Name = "Choose"
 Choose.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Choose.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Choose.Active = true
 Choose.draggable = true
 
 lol.Name = "lol"
