@@ -31,7 +31,6 @@ LoginFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
 LoginFrame.BorderSizePixel = 0
 LoginFrame.Position = UDim2.new(0.389049619, 0, 0.253605783, 0)
 LoginFrame.Size = UDim2.new(0.298493832, 0, 0.412259609, 0)
-LoginFrame.Visible = true
 LoginFrame.Active = true
 LoginFrame.Draggable = true
 
