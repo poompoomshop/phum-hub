@@ -1,316 +1,114 @@
--- Gui to Lua
--- Version: 3.2
 
 -- Instances:
 
-local Expliot = Instance.new("ScreenGui")
-local Menu = Instance.new("Frame")
+local ScreenGui = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local cr = Instance.new("TextLabel")
-local cre2 = Instance.new("TextLabel")
-local cre2_2 = Instance.new("TextLabel")
-local TextLabel = Instance.new("TextLabel")
-local line = Instance.new("TextLabel")
-local line_2 = Instance.new("TextLabel")
-local line_3 = Instance.new("TextLabel")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local GodHalo = Instance.new("TextButton")
-local GodChestplate = Instance.new("TextButton")
-local GodLegs = Instance.new("TextButton")
-local VoidGreaves = Instance.new("TextButton")
-local VoidChestplate = Instance.new("TextButton")
-local VoidShroud = Instance.new("TextButton")
-local TextLabel_2 = Instance.new("TextLabel")
-local minisize = Instance.new("Frame")
+local Decorate = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local HideUI = Instance.new("ImageButton")
+local password = Instance.new("TextBox")
+local title = Instance.new("TextButton")
+local title_2 = Instance.new("TextButton")
+local XlFrame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local Menu2 = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
-local UICorner_5 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local craftitem = Instance.new("TextBox")
 local craft = Instance.new("TextButton")
-local Aimbot = Instance.new("TextButton")
-local VoidTP = Instance.new("TextButton")
-local Choose = Instance.new("ScreenGui")
-local lol = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
-local lock = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
-local booga = Instance.new("ImageButton")
-local UICorner_8 = Instance.new("UICorner")
-local title = Instance.new("TextLabel")
-local title_2 = Instance.new("TextLabel")
-local cr_2 = Instance.new("TextLabel")
+local craftitem = Instance.new("TextBox")
+local title_3 = Instance.new("TextButton")
+local title_4 = Instance.new("TextButton")
+local hide = Instance.new("TextButton")
+local DisFrame = Instance.new("Frame")
+local Cr2 = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
-Expliot.Name = "Expliot"
-Expliot.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Expliot.Enabled = true
-Expliot.Draggable = true
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Menu.Name = "Menu"
-Menu.Parent = Expliot
-Menu.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Menu.Position = UDim2.new(0.0260047279, 0, 0.575721145, 0)
-Menu.Size = UDim2.new(0.338849485, 0, 0.269230783, 0)
-Menu.Visible = false
-UICorner.Parent = Menu
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = ScreenGui
+LoginFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+LoginFrame.BorderSizePixel = 0
+LoginFrame.Position = UDim2.new(0.389049619, 0, 0.253605783, 0)
+LoginFrame.Size = UDim2.new(0.298493832, 0, 0.412259609, 0)
+LoginFrame.Visible = true
+LoginFrame.Active = true
+LoginFrame.Draggable = true
 
-cr.Name = "cr"
-cr.Parent = Menu
-cr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-cr.BackgroundTransparency = 1.000
-cr.Position = UDim2.new(0.741741717, 0, 0.0299727526, 0)
-cr.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
-cr.Font = Enum.Font.SourceSansBold
-cr.Text = "Credits"
-cr.TextColor3 = Color3.fromRGB(12, 255, 247)
-cr.TextScaled = true
-cr.TextSize = 14.000
-cr.TextWrapped = true
+LoginFrame.MouseButton1Down:connect(function()
+	if password.Text =="Phum" or "Dew" then
+		LoginFrame.Visible = false
+		XlFrame.Visible = true
+		DisFrame.Visible = true
+	end
+end)
 
-cre2.Name = "cre2"
-cre2.Parent = Menu
-cre2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-cre2.BackgroundTransparency = 1.000
-cre2.Position = UDim2.new(0.741741717, 0, 0.174386919, 0)
-cre2.Size = UDim2.new(0.196696699, 0, 0.0926430523, 0)
-cre2.Font = Enum.Font.SourceSansBold
-cre2.Text = "ui : dewdososmall"
-cre2.TextColor3 = Color3.fromRGB(12, 255, 247)
-cre2.TextScaled = true
-cre2.TextSize = 14.000
-cre2.TextWrapped = true
+UICorner.Parent = LoginFrame
 
-cre2_2.Name = "cre2"
-cre2_2.Parent = Menu
-cre2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-cre2_2.BackgroundTransparency = 1.000
-cre2_2.Position = UDim2.new(0.741741717, 0, 0.250681192, 0)
-cre2_2.Size = UDim2.new(0.196696699, 0, 0.0926430523, 0)
-cre2_2.Font = Enum.Font.SourceSansBold
-cre2_2.Text = "name : phum phum shop"
-cre2_2.TextColor3 = Color3.fromRGB(75, 255, 25)
-cre2_2.TextScaled = true
-cre2_2.TextSize = 14.000
-cre2_2.TextWrapped = true
+Decorate.Name = "Decorate"
+Decorate.Parent = LoginFrame
+Decorate.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Decorate.BorderSizePixel = 0
+Decorate.Position = UDim2.new(0.0983438417, 0, 0.133381933, 0)
+Decorate.Size = UDim2.new(0.800908625, 0, 0.73295933, 0)
 
-TextLabel.Parent = Menu
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.755255222, 0, 0.435967296, 0)
-TextLabel.Size = UDim2.new(0.196696699, 0, 0.0926430523, 0)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "ถามหาดิสหรอ ... กุบิด"
-TextLabel.TextColor3 = Color3.fromRGB(255, 61, 252)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+UICorner_2.Parent = Decorate
 
-line.Name = "line"
-line.Parent = Menu
-line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-line.BackgroundTransparency = 1.000
-line.Position = UDim2.new(0.741741717, 0, 0.122615799, 0)
-line.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
-line.Font = Enum.Font.SourceSansBold
-line.Text = "-----------------------"
-line.TextColor3 = Color3.fromRGB(255, 255, 255)
-line.TextScaled = true
-line.TextSize = 14.000
-line.TextWrapped = true
+password.Name = "password"
+password.Parent = LoginFrame
+password.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+password.BackgroundTransparency = 0.500
+password.BorderSizePixel = 0
+password.Position = UDim2.new(0.255538493, 0, 0.431486875, 0)
+password.Size = UDim2.new(0.469930947, 0, 0.133381918, 0)
+password.Font = Enum.Font.SourceSans
+password.Text = "Password >:)"
+password.TextColor3 = Color3.fromRGB(0, 0, 0)
+password.TextScaled = true
+password.TextSize = 14.000
+password.TextWrapped = true
 
-line_2.Name = "line"
-line_2.Parent = Menu
-line_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-line_2.BackgroundTransparency = 1.000
-line_2.Position = UDim2.new(0.741741717, 0, 0.343324244, 0)
-line_2.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
-line_2.Font = Enum.Font.SourceSansBold
-line_2.Text = "-----------------------"
-line_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-line_2.TextScaled = true
-line_2.TextSize = 14.000
-line_2.TextWrapped = true
+title.Name = "title"
+title.Parent = LoginFrame
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.114620782, 0, 0.174927115, 0)
+title.Size = UDim2.new(0.741413236, 0, 0.177842587, 0)
+title.Font = Enum.Font.LuckiestGuy
+title.Text = "🎄Phum Phum Hub"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
 
-line_3.Name = "line"
-line_3.Parent = Menu
-line_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-line_3.BackgroundTransparency = 1.000
-line_3.Position = UDim2.new(0.741741717, 0, 0.524401486, 0)
-line_3.Size = UDim2.new(0.258258253, 0, 0.0926430523, 0)
-line_3.Font = Enum.Font.SourceSansBold
-line_3.Text = "-----------------------"
-line_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-line_3.TextScaled = true
-line_3.TextSize = 14.000
-line_3.TextWrapped = true
+title_2.Name = "title"
+title_2.Parent = LoginFrame
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.Position = UDim2.new(0.114620782, 0, 0.174927115, 0)
+title_2.Size = UDim2.new(0.741413236, 0, 0.177842587, 0)
+title_2.Font = Enum.Font.LuckiestGuy
+title_2.Text = "🎄Phum Phum Hub"
+title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_2.TextScaled = true
+title_2.TextSize = 14.000
+title_2.TextWrapped = true
 
-ScrollingFrame.Parent = Menu
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
-ScrollingFrame.Position = UDim2.new(0.0372093022, 0, 0.171795964, 0)
-ScrollingFrame.Size = UDim2.new(0.688372076, 0, 0.757359564, 0)
+XlFrame.Name = "XlFrame"
+XlFrame.Parent = ScreenGui
+XlFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+XlFrame.Position = UDim2.new(0.330963135, 0, 0.248798102, 0)
+XlFrame.Size = UDim2.new(0.390433133, 0, 0.451923072, 0)
+XlFrame.Active = true
+XlFrame.Draggable = true
+XlFrame.Visible = false
 
-GodHalo.Name = "GodHalo"
-GodHalo.Parent = ScrollingFrame
-GodHalo.BackgroundColor3 = Color3.fromRGB(255, 249, 87)
-GodHalo.Position = UDim2.new(0.0533333346, 0, 0.00408811308, 0)
-GodHalo.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
-GodHalo.Font = Enum.Font.SourceSans
-GodHalo.Text = "GodHalo"
-GodHalo.TextColor3 = Color3.fromRGB(0, 0, 0)
-GodHalo.TextScaled = true
-GodHalo.TextSize = 14.000
-GodHalo.TextWrapped = true
-
-GodChestplate.Name = "GodChestplate"
-GodChestplate.Parent = ScrollingFrame
-GodChestplate.BackgroundColor3 = Color3.fromRGB(255, 249, 87)
-GodChestplate.Position = UDim2.new(0.0533333346, 0, 0.0554273985, 0)
-GodChestplate.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
-GodChestplate.Font = Enum.Font.SourceSans
-GodChestplate.Text = "GodChestplate"
-GodChestplate.TextColor3 = Color3.fromRGB(0, 0, 0)
-GodChestplate.TextScaled = true
-GodChestplate.TextSize = 14.000
-GodChestplate.TextWrapped = true
-
-GodLegs.Name = "GodLegs"
-GodLegs.Parent = ScrollingFrame
-GodLegs.BackgroundColor3 = Color3.fromRGB(255, 249, 87)
-GodLegs.Position = UDim2.new(0.0533333346, 0, 0.106766678, 0)
-GodLegs.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
-GodLegs.Font = Enum.Font.SourceSans
-GodLegs.Text = "GodLegs"
-GodLegs.TextColor3 = Color3.fromRGB(0, 0, 0)
-GodLegs.TextScaled = true
-GodLegs.TextSize = 14.000
-GodLegs.TextWrapped = true
-
-VoidGreaves.Name = "VoidGreaves"
-VoidGreaves.Parent = ScrollingFrame
-VoidGreaves.BackgroundColor3 = Color3.fromRGB(126, 66, 255)
-VoidGreaves.Position = UDim2.new(0.0533333346, 0, 0.220605969, 0)
-VoidGreaves.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
-VoidGreaves.Font = Enum.Font.SourceSans
-VoidGreaves.Text = "VoidGreaves"
-VoidGreaves.TextColor3 = Color3.fromRGB(0, 0, 0)
-VoidGreaves.TextScaled = true
-VoidGreaves.TextSize = 14.000
-VoidGreaves.TextWrapped = true
-
-VoidChestplate.Name = "VoidChestplate"
-VoidChestplate.Parent = ScrollingFrame
-VoidChestplate.BackgroundColor3 = Color3.fromRGB(126, 66, 255)
-VoidChestplate.Position = UDim2.new(0.0533333346, 0, 0.271945268, 0)
-VoidChestplate.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
-VoidChestplate.Font = Enum.Font.SourceSans
-VoidChestplate.Text = "VoidChestplate"
-VoidChestplate.TextColor3 = Color3.fromRGB(0, 0, 0)
-VoidChestplate.TextScaled = true
-VoidChestplate.TextSize = 14.000
-VoidChestplate.TextWrapped = true
-
-VoidShroud.Name = "VoidShroud"
-VoidShroud.Parent = ScrollingFrame
-VoidShroud.BackgroundColor3 = Color3.fromRGB(126, 66, 255)
-VoidShroud.Position = UDim2.new(0.0533333346, 0, 0.323284566, 0)
-VoidShroud.Size = UDim2.new(0.74000001, 0, 0.0532994568, 0)
-VoidShroud.Font = Enum.Font.SourceSans
-VoidShroud.Text = "VoidShroud"
-VoidShroud.TextColor3 = Color3.fromRGB(0, 0, 0)
-VoidShroud.TextScaled = true
-VoidShroud.TextSize = 14.000
-VoidShroud.TextWrapped = true
-
-TextLabel_2.Parent = Menu
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.200000003, 0, -0.0133928563, 0)
-TextLabel_2.Size = UDim2.new(0.330232531, 0, 0.171795964, 0)
-TextLabel_2.Font = Enum.Font.SourceSansSemibold
-TextLabel_2.Text = "ชุดเกราะ"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-minisize.Name = "minisize"
-minisize.Parent = Expliot
-minisize.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-minisize.BackgroundTransparency = 1.000
-minisize.Position = UDim2.new(0.364854246, 0, 0.575721204, 0)
-minisize.Size = UDim2.new(0.0788021684, 0, 0.117375813, 0)
-minisize.Visible = false
-minisize.Draggable = true
-minisize.Draggable = true
-UICorner_2.Parent = minisize
-
-HideUI.Name = "HideUI"
-HideUI.Parent = minisize
-HideUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HideUI.Size = UDim2.new(0, 100, 0, 100)
-HideUI.Image = "http://www.roblox.com/asset/?id=12003428375"
-
-UICorner_3.Parent = HideUI
-
-Menu2.Name = "Menu2"
-Menu2.Parent = Expliot
-Menu2.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Menu2.Position = UDim2.new(0.0386130847, 0, 0.294471145, 0)
-Menu2.Size = UDim2.new(0.338849485, 0, 0.269230783, 0)
-Menu2.Visible = false
-Menu2.Draggable = true
-
-UICorner_4.Parent = Menu2
-
-TextLabel_3.Parent = Menu2
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
-TextLabel_3.BackgroundTransparency = 0.500
-TextLabel_3.Position = UDim2.new(0.216279089, 0, -0.225525424, 0)
-TextLabel_3.Size = UDim2.new(0, 215, 0, 50)
-TextLabel_3.Font = Enum.Font.Unknown
-TextLabel_3.Text = "phum phum HUB"
-TextLabel_3.TextColor3 = Color3.fromRGB(214, 189, 0)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
-UICorner_5.Parent = TextLabel_3
-
-TextLabel_4.Parent = Menu2
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.200000003, 0, -0.0133928563, 0)
-TextLabel_4.Size = UDim2.new(0.330232531, 0, 0.171795964, 0)
-TextLabel_4.Font = Enum.Font.SourceSansSemibold
-TextLabel_4.Text = "พิมพ์เพื่อคราฟ"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
-craftitem.Name = "craftitem"
-craftitem.Parent = Menu2
-craftitem.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-craftitem.Position = UDim2.new(0.186046511, 0, 0.575892806, 0)
-craftitem.Size = UDim2.new(0.389581442, 0, 0.205357149, 0)
-craftitem.Font = Enum.Font.SourceSans
-craftitem.Text = "กดแล้วพิมพ์ใส่กู"
-craftitem.TextColor3 = Color3.fromRGB(255, 255, 255)
-craftitem.TextScaled = true
-craftitem.TextSize = 14.000
-craftitem.TextWrapped = true
+UICorner_3.Parent = XlFrame
 
 craft.Name = "craft"
-craft.Parent = Menu2
+craft.Parent = XlFrame
 craft.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-craft.Position = UDim2.new(0.186046511, 0, 0.303571403, 0)
+craft.Position = UDim2.new(0.305127859, 0, 0.351443738, 0)
 craft.Size = UDim2.new(0.389581442, 0, 0.169642851, 0)
 craft.Font = Enum.Font.SourceSans
 craft.Text = "Craft"
@@ -319,237 +117,335 @@ craft.TextScaled = true
 craft.TextSize = 14.000
 craft.TextWrapped = true
 
-Aimbot.Name = "Aimbot"
-Aimbot.Parent = Menu2
-Aimbot.BackgroundColor3 = Color3.fromRGB(255, 58, 58)
-Aimbot.Position = UDim2.new(0.632558167, 0, 0.428571403, 0)
-Aimbot.Size = UDim2.new(0.330232561, 0, 0.138392851, 0)
-Aimbot.Font = Enum.Font.SourceSans
-Aimbot.Text = "aim"
-Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
-Aimbot.TextScaled = true
-Aimbot.TextSize = 14.000
-Aimbot.TextWrapped = true
+craftitem.Name = "craftitem"
+craftitem.Parent = XlFrame
+craftitem.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+craftitem.BorderColor3 = Color3.fromRGB(136, 7, 7)
+craftitem.Position = UDim2.new(0.305127859, 0, 0.567914069, 0)
+craftitem.Size = UDim2.new(0.389581442, 0, 0.205357149, 0)
+craftitem.Font = Enum.Font.SourceSans
+craftitem.Text = ""
+craftitem.TextColor3 = Color3.fromRGB(255, 255, 255)
+craftitem.TextScaled = true
+craftitem.TextSize = 14.000
+craftitem.TextWrapped = true
 
-VoidTP.Name = "Void TP"
-VoidTP.Parent = Menu2
-VoidTP.BackgroundColor3 = Color3.fromRGB(187, 29, 255)
-VoidTP.Position = UDim2.new(0.632558167, 0, 0.575892806, 0)
-VoidTP.Size = UDim2.new(0.330232561, 0, 0.138392851, 0)
-VoidTP.Font = Enum.Font.SourceSans
-VoidTP.Text = "Void TP"
-VoidTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-VoidTP.TextScaled = true
-VoidTP.TextSize = 14.000
-VoidTP.TextWrapped = true
+title_3.Name = "title"
+title_3.Parent = XlFrame
+title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_3.BackgroundTransparency = 1.000
+title_3.Position = UDim2.new(0.0986957252, 0, 0.0283946581, 0)
+title_3.Size = UDim2.new(0.775037885, 0, 0.289893627, 0)
+title_3.Font = Enum.Font.LuckiestGuy
+title_3.Text = "🎄Phum Phum Hub"
+title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_3.TextScaled = true
+title_3.TextSize = 14.000
+title_3.TextWrapped = true
 
-Choose.Name = "Choose"
-Choose.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Choose.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Choose.Draggable = true
+title_4.Name = "title"
+title_4.Parent = XlFrame
+title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_4.BackgroundTransparency = 1.000
+title_4.Position = UDim2.new(0.213740408, 0, 0.818288267, 0)
+title_4.Size = UDim2.new(0.597425044, 0, 0.162234038, 0)
+title_4.Font = Enum.Font.LuckiestGuy
+title_4.Text = "Simple Craft"
+title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_4.TextScaled = true
+title_4.TextSize = 14.000
+title_4.TextWrapped = true
 
+hide.Name = "hide"
+hide.Parent = XlFrame
+hide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hide.BackgroundTransparency = 1.000
+hide.Position = UDim2.new(-0.139466897, 0, 0.159574464, 0)
+hide.Size = UDim2.new(0.139264569, 0, 0.632118046, 0)
+hide.Font = Enum.Font.LuckiestGuy
+hide.Text = "<"
+hide.TextColor3 = Color3.fromRGB(255, 255, 255)
+hide.TextScaled = true
+hide.TextSize = 14.000
+hide.TextWrapped = true
 
-lol.Name = "lol"
-lol.Parent = Choose
-lol.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-lol.Position = UDim2.new(0.348305762, 0, 0.337740391, 0)
-lol.Size = UDim2.new(0.349093765, 0, 0.31249997, 0)
-lol.Draggable = true
-UICorner_6.Parent = lol
+DisFrame.Name = "DisFrame"
+DisFrame.Parent = ScreenGui
+DisFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+DisFrame.Position = UDim2.new(0, 0, 0.920673072, 0)
+DisFrame.Size = UDim2.new(0.350584686, 0, 0.0793269202, 0)
+DisFrame.Active = true
+DisFrame.Draggable = true
+DisFrame.Visible = false
 
-lock.Name = "lock"
-lock.Parent = lol
-lock.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-lock.Position = UDim2.new(0.0616238751, 0, 0.0877403915, 0)
-lock.Size = UDim2.new(0.881825209, 0, 0.847115278, 0)
+Cr2.Name = "Cr2"
+Cr2.Parent = DisFrame
+Cr2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Cr2.BackgroundTransparency = 1.000
+Cr2.Position = UDim2.new(0.0831662565, 0, 0.0454546213, 0)
+Cr2.Selectable = false
+Cr2.Size = UDim2.new(0.741753101, 0, 0.909090936, 0)
+Cr2.ClearTextOnFocus = false
+Cr2.Font = Enum.Font.Bangers
+Cr2.Text = "https://discord.gg/Sz78UWTV6A"
+Cr2.TextColor3 = Color3.fromRGB(17, 152, 255)
+Cr2.TextScaled = true
+Cr2.TextSize = 14.000
+Cr2.TextWrapped = true
 
-UICorner_7.Parent = lock
+UICorner_4.Parent = DisFrame
 
-booga.Name = "booga"
-booga.Parent = lock
-booga.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-booga.Position = UDim2.new(0.0401208699, 0, 0.255880415, 0)
-booga.Size = UDim2.new(0, 100, 0, 100)
-booga.Image = "http://www.roblox.com/asset/?id=12003428375"
+-- Scripts:
 
-UICorner_8.Parent = booga
+local function EVSZCF_fake_script() -- title.Script 
+	local script = Instance.new('Script', title)
 
-title.Name = "title"
-title.Parent = lock
-title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title.BackgroundTransparency = 1.000
-title.Position = UDim2.new(0.325296938, 0, -0.104426816, 0)
-title.Size = UDim2.new(0.406382591, 0, 0.18076925, 0)
-title.Font = Enum.Font.Bangers
-title.Text = "เลือก แฮกที่ต้องการ"
-title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextScaled = true
-title.TextSize = 14.000
-title.TextWrapped = true
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(EVSZCF_fake_script)()
+local function XJZTH_fake_script() -- title_2.Script 
+	local script = Instance.new('Script', title_2)
 
-title_2.Name = "title"
-title_2.Parent = lock
-title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_2.BackgroundTransparency = 1.000
-title_2.Position = UDim2.new(0.0534860864, 0, 0.706622779, 0)
-title_2.Size = UDim2.new(0.225733668, 0, 0.18076925, 0)
-title_2.Font = Enum.Font.Bangers
-title_2.Text = "booga แฮกพื้นฐาน"
-title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_2.TextScaled = true
-title_2.TextSize = 14.000
-title_2.TextWrapped = true
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(XJZTH_fake_script)()
+local function PWBU_fake_script() -- title_3.Script 
+	local script = Instance.new('Script', title_3)
 
-cr_2.Name = "cr"
-cr_2.Parent = lock
-cr_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-cr_2.BackgroundTransparency = 1.000
-cr_2.Position = UDim2.new(0.279219717, 0, 0.885357797, 0)
-cr_2.Size = UDim2.new(0.406382591, 0, 0.18076925, 0)
-cr_2.Font = Enum.Font.Bangers
-cr_2.Text = "BY Phum Phum Hub"
-cr_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-cr_2.TextScaled = true
-cr_2.TextSize = 14.000
-cr_2.TextWrapped = true
----------
-GodHalo.MouseButton1Click:connect(function()
-	local A_1   = "God Halo"
-	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
-	Event:FireServer(A_1)
-end)
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(PWBU_fake_script)()
+local function FYZPBH_fake_script() -- title_4.Script 
+	local script = Instance.new('Script', title_4)
 
-VoidShroud.MouseButton1Click:connect(function()
-	local A_1   = "VoidShroud"
-	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
-	Event:FireServer(A_1)
-end)
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(FYZPBH_fake_script)()
+local function TQET_fake_script() -- hide.Script 
+	local script = Instance.new('Script', hide)
 
-VoidChestplate.MouseButton1Click:connect(function()
-	local A_1   = "VoidChestplate"
-	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
-	Event:FireServer(A_1)
-end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local XlFrame = script.Parent.Parent.Frame
+		local button = script.Parent
+		if XlFrame.Visible == false then
+			XlFrame.Visible = true
+			button.Text = "<"
+		else
+			XlFrame.Visible = false
+			button.Text = ">"
+		end
+	end)
+end
+coroutine.wrap(TQET_fake_script)()
 
-VoidGreaves.MouseButton1Click:connect(function()
-	local A_1   = "VoidGreaves"
-	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
-	Event:FireServer(A_1)
-end)
-
-GodLegs.MouseButton1Click:connect(function()
-	local A_1   = "GodLegs"
-	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
-	Event:FireServer(A_1)
-end)
-
-GodChestplate.MouseButton1Click:connect(function()
-	local A_1   = "GodChestplate"
-	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
-	Event:FireServer(A_1)
-end)
---------------
+-- Other script gay poom
 craft.MouseButton1Down:connect(function() 
 	local item = craftitem.Text
 	local CI = item
 	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
 	Event:FireServer(CI)
-end)
---------------
-Aimbot.MouseButton1Click:connect(function()
-	local Camera = workspace.CurrentCamera
-	local Players = game:GetService("Players")
-	local RunService = game:GetService("RunService")
-	local UserInputService = game:GetService("UserInputService")
-	local TweenService = game:GetService("TweenService")
-	local LocalPlayer = Players.LocalPlayer
-	local Holding = false
-
-	_G.AimbotEnabled = true
-	_G.TeamCheck = false -- If set to true then the script would only lock your aim at enemy team members.
-	_G.AimPart = "Head" -- Where the aimbot script would lock at.
-	_G.Sensitivity = 0 -- How many seconds it takes for the aimbot script to officially lock onto the target's aimpart.
-
-	local function GetClosestPlayer()
-		local MaximumDistance = math.huge
-		local Target = nil
-
-		coroutine.wrap(function()
-			wait(20); MaximumDistance = math.huge -- Reset the MaximumDistance so that the Aimbot doesn't remember it as a very small variable and stop capturing players...
-		end)()
-
-		for _, v in next, Players:GetPlayers() do
-			if v.Name ~= LocalPlayer.Name then
-				if _G.TeamCheck == true then
-					if v.Team ~= LocalPlayer.Team then
-						if v.Character ~= nil then
-							if v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
-								if v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("Humanoid").Health ~= 0 then
-									local ScreenPoint = Camera:WorldToScreenPoint(v.Character:WaitForChild("HumanoidRootPart", math.huge).Position)
-									local VectorDistance = (Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2.new(ScreenPoint.X, ScreenPoint.Y)).Magnitude
-
-									if VectorDistance < MaximumDistance then
-										Target = v
-										MaximumDistance = VectorDistance
-									end
-								end
-							end
-						end
-					end
-				else
-					if v.Character ~= nil then
-						if v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
-							if v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("Humanoid").Health ~= 0 then
-								local ScreenPoint = Camera:WorldToScreenPoint(v.Character:WaitForChild("HumanoidRootPart", math.huge).Position)
-								local VectorDistance = (Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2.new(ScreenPoint.X, ScreenPoint.Y)).Magnitude
-
-								if VectorDistance < MaximumDistance then
-									Target = v
-									MaximumDistance = VectorDistance
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-
-		return Target
-	end
-
-	UserInputService.InputBegan:Connect(function(Input)
-		if Input.UserInputType == Enum.UserInputType.MouseButton2 then
-			Holding = true
-		end
-	end)
-
-	UserInputService.InputEnded:Connect(function(Input)
-		if Input.UserInputType == Enum.UserInputType.MouseButton2 then
-			Holding = false
-		end
-	end)
-
-	RunService.RenderStepped:Connect(function()
-		if Holding == true and _G.AimbotEnabled == true then
-			TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.AimPart].Position)}):Play()
-		end
-	end)
-end)
----------- HIDE UI TYPE FOR MENU
-HideUI.MouseButton1Click:Connect(function()
-	if HideUI.Parent.Text== ">" then
-		HideUI.Parent.Text= "<"
-		HideUI.Parent.Parent.Parent.Menu.visible = false
-		HideUI.Parent.Parent.Parent.Menu2.visible = false
-	else
-		HideUI.Parent.Text= ">"
-		HideUI.Parent.Parent.Parent.Menu.visible = true
-		HideUI.Parent.Parent.Parent.Menu2.visible = true
-	end
-end)
----------- HIDE UI TYPE FOR OPEN
-booga.MouseButton1Click:Connect(function()
-	Menu.Visible = true
-	Menu2.Visible = true
-	lol.visible = true
 end)
