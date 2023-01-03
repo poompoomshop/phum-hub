@@ -1,3 +1,5 @@
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -16,6 +18,7 @@ local craftitem = Instance.new("TextBox")
 local title_3 = Instance.new("TextButton")
 local title_4 = Instance.new("TextButton")
 local hide = Instance.new("TextButton")
+local anti = Instance.new("TextButton")
 local DisFrame = Instance.new("Frame")
 local Cr2 = Instance.new("TextBox")
 local UICorner_4 = Instance.new("UICorner")
@@ -35,7 +38,7 @@ LoginFrame.Active = true
 LoginFrame.Draggable = true
 
 LoginFrame.MouseButton1Down:connect(function()
-	if password.Text =="Phum" or "Dew" then
+	if password.Text =="Ezx34" or "Dew" then
 		LoginFrame.Visible = false
 		XlFrame.Visible = true
 		DisFrame.Visible = true
@@ -98,9 +101,9 @@ XlFrame.Parent = ScreenGui
 XlFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 XlFrame.Position = UDim2.new(0.330963135, 0, 0.248798102, 0)
 XlFrame.Size = UDim2.new(0.390433133, 0, 0.451923072, 0)
+XlFrame.Visible = false
 XlFrame.Active = true
 XlFrame.Draggable = true
-XlFrame.Visible = false
 
 UICorner_3.Parent = XlFrame
 
@@ -168,14 +171,29 @@ hide.TextScaled = true
 hide.TextSize = 14.000
 hide.TextWrapped = true
 
+anti.Name = "anti"
+anti.Parent = XlFrame
+anti.BackgroundColor3 = Color3.fromRGB(1, 98, 255)
+anti.Position = UDim2.new(0.347512752, 0, 0.997720361, 0)
+anti.Size = UDim2.new(0.274492621, 0, 0.169642851, 0)
+anti.Font = Enum.Font.SourceSans
+anti.Text = "🛡anti kick"
+anti.TextColor3 = Color3.fromRGB(0, 0, 0)
+anti.TextScaled = true
+anti.TextSize = 14.000
+anti.TextWrapped = true
+anti.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/poompoomshop/anit-kick/main/codes", true))();
+end)
+
 DisFrame.Name = "DisFrame"
 DisFrame.Parent = ScreenGui
 DisFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 DisFrame.Position = UDim2.new(0, 0, 0.920673072, 0)
 DisFrame.Size = UDim2.new(0.350584686, 0, 0.0793269202, 0)
+DisFrame.Visible = false
 DisFrame.Active = true
 DisFrame.Draggable = true
-DisFrame.Visible = false
 
 Cr2.Name = "Cr2"
 Cr2.Parent = DisFrame
@@ -196,7 +214,7 @@ UICorner_4.Parent = DisFrame
 
 -- Scripts:
 
-local function EVSZCF_fake_script() -- title.Script 
+local function ZYZRAT_fake_script() -- title.Script 
 	local script = Instance.new('Script', title)
 
 	local text = script.Parent
@@ -252,8 +270,8 @@ local function EVSZCF_fake_script() -- title.Script
 		end
 	end
 end
-coroutine.wrap(EVSZCF_fake_script)()
-local function XJZTH_fake_script() -- title_2.Script 
+coroutine.wrap(ZYZRAT_fake_script)()
+local function ESTMAJ_fake_script() -- title_2.Script 
 	local script = Instance.new('Script', title_2)
 
 	local text = script.Parent
@@ -309,8 +327,8 @@ local function XJZTH_fake_script() -- title_2.Script
 		end
 	end
 end
-coroutine.wrap(XJZTH_fake_script)()
-local function PWBU_fake_script() -- title_3.Script 
+coroutine.wrap(ESTMAJ_fake_script)()
+local function CUIDSNB_fake_script() -- title_3.Script 
 	local script = Instance.new('Script', title_3)
 
 	local text = script.Parent
@@ -366,8 +384,8 @@ local function PWBU_fake_script() -- title_3.Script
 		end
 	end
 end
-coroutine.wrap(PWBU_fake_script)()
-local function FYZPBH_fake_script() -- title_4.Script 
+coroutine.wrap(CUIDSNB_fake_script)()
+local function NSJL_fake_script() -- title_4.Script 
 	local script = Instance.new('Script', title_4)
 
 	local text = script.Parent
@@ -423,23 +441,23 @@ local function FYZPBH_fake_script() -- title_4.Script
 		end
 	end
 end
-coroutine.wrap(FYZPBH_fake_script)()
-local function TQET_fake_script() -- hide.Script 
+coroutine.wrap(NSJL_fake_script)()
+local function IJZTK_fake_script() -- hide.Script 
 	local script = Instance.new('Script', hide)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		local XlFrame = script.Parent.Parent.Frame
+		local frame = script.Parent.Parent.Frame
 		local button = script.Parent
-		if XlFrame.Visible == false then
-			XlFrame.Visible = true
-			button.Text = "<"
+		if frame.Visible == false then
+			frame.Visible = true
+			button.Text = "Hide UIs"
 		else
-			XlFrame.Visible = false
-			button.Text = ">"
+			frame.Visible = false
+			button.Text = "Show UIs"
 		end
 	end)
 end
-coroutine.wrap(TQET_fake_script)()
+coroutine.wrap(IJZTK_fake_script)()
 
 -- Other script gay poom
 craft.MouseButton1Down:connect(function() 
@@ -448,6 +466,3 @@ craft.MouseButton1Down:connect(function()
 	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
 	Event:FireServer(CI)
 end)
-
-
-
