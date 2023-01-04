@@ -6,11 +6,13 @@
 local ScreenGui = Instance.new("ScreenGui")
 local LoginFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Decorate = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
 local password = Instance.new("TextBox")
 local title = Instance.new("TextButton")
 local title_2 = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local DisFrame = Instance.new("Frame")
+local Cr2 = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
 local XlFrame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local craft = Instance.new("TextButton")
@@ -19,9 +21,6 @@ local title_3 = Instance.new("TextButton")
 local title_4 = Instance.new("TextButton")
 local hide = Instance.new("TextButton")
 local anti = Instance.new("TextButton")
-local DisFrame = Instance.new("Frame")
-local Cr2 = Instance.new("TextBox")
-local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
@@ -37,24 +36,7 @@ LoginFrame.Size = UDim2.new(0.298493832, 0, 0.412259609, 0)
 LoginFrame.Active = true
 LoginFrame.Draggable = true
 
-LoginFrame.MouseButton1Down:connect(function()
-	if password.Text =="Ezx34" or "Dew" then
-		LoginFrame.Visible = false
-		XlFrame.Visible = true
-		DisFrame.Visible = true
-	end
-end)
-
 UICorner.Parent = LoginFrame
-
-Decorate.Name = "Decorate"
-Decorate.Parent = LoginFrame
-Decorate.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Decorate.BorderSizePixel = 0
-Decorate.Position = UDim2.new(0.0983438417, 0, 0.133381933, 0)
-Decorate.Size = UDim2.new(0.800908625, 0, 0.73295933, 0)
-
-UICorner_2.Parent = Decorate
 
 password.Name = "password"
 password.Parent = LoginFrame
@@ -95,6 +77,51 @@ title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 title_2.TextScaled = true
 title_2.TextSize = 14.000
 title_2.TextWrapped = true
+
+TextButton.Parent = LoginFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.234959513, 0, 0.712119162, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Done"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	if password.Text =="Ezx34" or "Ex22" then
+		LoginFrame.Visible = false
+		XlFrame.Visible = true
+		DisFrame.Visible = true
+	end
+end)
+
+DisFrame.Name = "DisFrame"
+DisFrame.Parent = ScreenGui
+DisFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+DisFrame.Position = UDim2.new(0, 0, 0.920673072, 0)
+DisFrame.Size = UDim2.new(0.350584686, 0, 0.0793269202, 0)
+DisFrame.Visible = false
+DisFrame.Active = true
+DisFrame.Draggable = true
+
+Cr2.Name = "Cr2"
+Cr2.Parent = DisFrame
+Cr2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Cr2.BackgroundTransparency = 1.000
+Cr2.Position = UDim2.new(0.0831662565, 0, 0.0454546213, 0)
+Cr2.Selectable = false
+Cr2.Size = UDim2.new(0.741753101, 0, 0.909090936, 0)
+Cr2.ClearTextOnFocus = false
+Cr2.Font = Enum.Font.Bangers
+Cr2.Text = "https://discord.gg/Sz78UWTV6A"
+Cr2.TextColor3 = Color3.fromRGB(17, 152, 255)
+Cr2.TextScaled = true
+Cr2.TextSize = 14.000
+Cr2.TextWrapped = true
+
+UICorner_2.Parent = DisFrame
 
 XlFrame.Name = "XlFrame"
 XlFrame.Parent = ScreenGui
@@ -182,39 +209,10 @@ anti.TextColor3 = Color3.fromRGB(0, 0, 0)
 anti.TextScaled = true
 anti.TextSize = 14.000
 anti.TextWrapped = true
-anti.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/poompoomshop/anit-kick/main/codes", true))();
-end)
-
-DisFrame.Name = "DisFrame"
-DisFrame.Parent = ScreenGui
-DisFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-DisFrame.Position = UDim2.new(0, 0, 0.920673072, 0)
-DisFrame.Size = UDim2.new(0.350584686, 0, 0.0793269202, 0)
-DisFrame.Visible = false
-DisFrame.Active = true
-DisFrame.Draggable = true
-
-Cr2.Name = "Cr2"
-Cr2.Parent = DisFrame
-Cr2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-Cr2.BackgroundTransparency = 1.000
-Cr2.Position = UDim2.new(0.0831662565, 0, 0.0454546213, 0)
-Cr2.Selectable = false
-Cr2.Size = UDim2.new(0.741753101, 0, 0.909090936, 0)
-Cr2.ClearTextOnFocus = false
-Cr2.Font = Enum.Font.Bangers
-Cr2.Text = "https://discord.gg/Sz78UWTV6A"
-Cr2.TextColor3 = Color3.fromRGB(17, 152, 255)
-Cr2.TextScaled = true
-Cr2.TextSize = 14.000
-Cr2.TextWrapped = true
-
-UICorner_4.Parent = DisFrame
 
 -- Scripts:
 
-local function ZYZRAT_fake_script() -- title.Script 
+local function ZZJZ_fake_script() -- title.Script 
 	local script = Instance.new('Script', title)
 
 	local text = script.Parent
@@ -270,8 +268,8 @@ local function ZYZRAT_fake_script() -- title.Script
 		end
 	end
 end
-coroutine.wrap(ZYZRAT_fake_script)()
-local function ESTMAJ_fake_script() -- title_2.Script 
+coroutine.wrap(ZZJZ_fake_script)()
+local function CTKUR_fake_script() -- title_2.Script 
 	local script = Instance.new('Script', title_2)
 
 	local text = script.Parent
@@ -327,8 +325,8 @@ local function ESTMAJ_fake_script() -- title_2.Script
 		end
 	end
 end
-coroutine.wrap(ESTMAJ_fake_script)()
-local function CUIDSNB_fake_script() -- title_3.Script 
+coroutine.wrap(CTKUR_fake_script)()
+local function ONIUIRF_fake_script() -- title_3.Script 
 	local script = Instance.new('Script', title_3)
 
 	local text = script.Parent
@@ -384,8 +382,8 @@ local function CUIDSNB_fake_script() -- title_3.Script
 		end
 	end
 end
-coroutine.wrap(CUIDSNB_fake_script)()
-local function NSJL_fake_script() -- title_4.Script 
+coroutine.wrap(ONIUIRF_fake_script)()
+local function GZEDQBZ_fake_script() -- title_4.Script 
 	local script = Instance.new('Script', title_4)
 
 	local text = script.Parent
@@ -441,8 +439,8 @@ local function NSJL_fake_script() -- title_4.Script
 		end
 	end
 end
-coroutine.wrap(NSJL_fake_script)()
-local function IJZTK_fake_script() -- hide.Script 
+coroutine.wrap(GZEDQBZ_fake_script)()
+local function RRLK_fake_script() -- hide.Script 
 	local script = Instance.new('Script', hide)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -457,7 +455,7 @@ local function IJZTK_fake_script() -- hide.Script
 		end
 	end)
 end
-coroutine.wrap(IJZTK_fake_script)()
+coroutine.wrap(RRLK_fake_script)()
 
 -- Other script gay poom
 craft.MouseButton1Down:connect(function() 
