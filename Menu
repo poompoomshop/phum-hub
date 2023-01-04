@@ -444,14 +444,14 @@ local function RRLK_fake_script() -- hide.Script
 	local script = Instance.new('Script', hide)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		local frame = script.Parent.Parent.Frame
-		local button = script.Parent
-		if frame.Visible == false then
-			frame.Visible = true
-			button.Text = "Hide UIs"
+		local XlFrame = script.Parent.Parent.Frame
+		local hide = script.Parent
+		if XlFrame.Visible == false then
+			XlFrame.Visible = true
+			hide.Text = "<"
 		else
-			frame.Visible = false
-			button.Text = "Show UIs"
+			XlFrame.Visible = false
+			hide.Text = ">"
 		end
 	end)
 end
