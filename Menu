@@ -19,8 +19,9 @@ local craft = Instance.new("TextButton")
 local craftitem = Instance.new("TextBox")
 local title_3 = Instance.new("TextButton")
 local title_4 = Instance.new("TextButton")
-local hide = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
 local anti = Instance.new("TextButton")
+local bypass = Instance.new("TextButton")
 
 --Properties:
 
@@ -33,8 +34,6 @@ LoginFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
 LoginFrame.BorderSizePixel = 0
 LoginFrame.Position = UDim2.new(0.389049619, 0, 0.253605783, 0)
 LoginFrame.Size = UDim2.new(0.298493832, 0, 0.412259609, 0)
-LoginFrame.Active = true
-LoginFrame.Draggable = true
 
 UICorner.Parent = LoginFrame
 
@@ -82,20 +81,13 @@ TextButton.Parent = LoginFrame
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Position = UDim2.new(0.234959513, 0, 0.712119162, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Size = UDim2.new(0.506878972, 0, 0.133522347, 0)
 TextButton.Font = Enum.Font.SourceSansBold
 TextButton.Text = "Done"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
-TextButton.MouseButton1Down:connect(function()
-	if password.Text =="Ezx34" or "Ex22" then
-		LoginFrame.Visible = false
-		XlFrame.Visible = true
-		DisFrame.Visible = true
-	end
-end)
 
 DisFrame.Name = "DisFrame"
 DisFrame.Parent = ScreenGui
@@ -103,8 +95,6 @@ DisFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 DisFrame.Position = UDim2.new(0, 0, 0.920673072, 0)
 DisFrame.Size = UDim2.new(0.350584686, 0, 0.0793269202, 0)
 DisFrame.Visible = false
-DisFrame.Active = true
-DisFrame.Draggable = true
 
 Cr2.Name = "Cr2"
 Cr2.Parent = DisFrame
@@ -129,8 +119,6 @@ XlFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 XlFrame.Position = UDim2.new(0.330963135, 0, 0.248798102, 0)
 XlFrame.Size = UDim2.new(0.390433133, 0, 0.451923072, 0)
 XlFrame.Visible = false
-XlFrame.Active = true
-XlFrame.Draggable = true
 
 UICorner_3.Parent = XlFrame
 
@@ -185,23 +173,23 @@ title_4.TextScaled = true
 title_4.TextSize = 14.000
 title_4.TextWrapped = true
 
-hide.Name = "hide"
-hide.Parent = XlFrame
-hide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hide.BackgroundTransparency = 1.000
-hide.Position = UDim2.new(-0.139466897, 0, 0.159574464, 0)
-hide.Size = UDim2.new(0.139264569, 0, 0.632118046, 0)
-hide.Font = Enum.Font.LuckiestGuy
-hide.Text = "<"
-hide.TextColor3 = Color3.fromRGB(255, 255, 255)
-hide.TextScaled = true
-hide.TextSize = 14.000
-hide.TextWrapped = true
+Exit.Name = "Exit"
+Exit.Parent = XlFrame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 34, 34)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.908045292, 0, -0.0941831172, 0)
+Exit.Size = UDim2.new(0.139264569, 0, 0.191869259, 0)
+Exit.Font = Enum.Font.LuckiestGuy
+Exit.Text = "x"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
 
 anti.Name = "anti"
 anti.Parent = XlFrame
 anti.BackgroundColor3 = Color3.fromRGB(1, 98, 255)
-anti.Position = UDim2.new(0.347512752, 0, 0.997720361, 0)
+anti.Position = UDim2.new(0.0972400904, 0, 0.997720361, 0)
 anti.Size = UDim2.new(0.274492621, 0, 0.169642851, 0)
 anti.Font = Enum.Font.SourceSans
 anti.Text = "🛡anti kick"
@@ -210,9 +198,21 @@ anti.TextScaled = true
 anti.TextSize = 14.000
 anti.TextWrapped = true
 
+bypass.Name = "bypass"
+bypass.Parent = XlFrame
+bypass.BackgroundColor3 = Color3.fromRGB(255, 130, 20)
+bypass.Position = UDim2.new(0.634115279, 0, 0.997720361, 0)
+bypass.Size = UDim2.new(0.274492621, 0, 0.169642851, 0)
+bypass.Font = Enum.Font.SourceSans
+bypass.Text = "💬chat pass"
+bypass.TextColor3 = Color3.fromRGB(0, 0, 0)
+bypass.TextScaled = true
+bypass.TextSize = 14.000
+bypass.TextWrapped = true
+
 -- Scripts:
 
-local function ZZJZ_fake_script() -- title.Script 
+local function PBWX_fake_script() -- title.Script 
 	local script = Instance.new('Script', title)
 
 	local text = script.Parent
@@ -268,8 +268,8 @@ local function ZZJZ_fake_script() -- title.Script
 		end
 	end
 end
-coroutine.wrap(ZZJZ_fake_script)()
-local function CTKUR_fake_script() -- title_2.Script 
+coroutine.wrap(PBWX_fake_script)()
+local function CAPO_fake_script() -- title_2.Script 
 	local script = Instance.new('Script', title_2)
 
 	local text = script.Parent
@@ -325,8 +325,8 @@ local function CTKUR_fake_script() -- title_2.Script
 		end
 	end
 end
-coroutine.wrap(CTKUR_fake_script)()
-local function ONIUIRF_fake_script() -- title_3.Script 
+coroutine.wrap(CAPO_fake_script)()
+local function SOUBSBX_fake_script() -- title_3.Script 
 	local script = Instance.new('Script', title_3)
 
 	local text = script.Parent
@@ -382,8 +382,8 @@ local function ONIUIRF_fake_script() -- title_3.Script
 		end
 	end
 end
-coroutine.wrap(ONIUIRF_fake_script)()
-local function GZEDQBZ_fake_script() -- title_4.Script 
+coroutine.wrap(SOUBSBX_fake_script)()
+local function DEMEE_fake_script() -- title_4.Script 
 	local script = Instance.new('Script', title_4)
 
 	local text = script.Parent
@@ -439,23 +439,23 @@ local function GZEDQBZ_fake_script() -- title_4.Script
 		end
 	end
 end
-coroutine.wrap(GZEDQBZ_fake_script)()
-local function RRLK_fake_script() -- hide.Script 
-	local script = Instance.new('Script', hide)
+coroutine.wrap(DEMEE_fake_script)()
+local function RQMV_fake_script() -- Exit.Script 
+	local script = Instance.new('Script', Exit)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local XlFrame = script.Parent.Parent.XlFrame
-		local hide = script.Parent
-		if XlFrame.Visible == false then
-			XlFrame.Visible = true
-			hide.Text = "<"
-		else
+		local Exit = script.Parent
+		if XlFrame.Visible == true then
 			XlFrame.Visible = false
-			hide.Text = ">"
+			Exit.Text = "x"
+		else
+			XlFrame.Visible = true
+			Exit.Text = "-"
 		end
 	end)
 end
-coroutine.wrap(RRLK_fake_script)()
+coroutine.wrap(RQMV_fake_script)()
 
 -- Other script gay poom
 craft.MouseButton1Down:connect(function() 
@@ -466,7 +466,15 @@ craft.MouseButton1Down:connect(function()
 end)
 
 anti.MouseButton1Down:connect(function() 
-	
+
 	loadstring(game:HttpGet("https://pastebin.com/raw/gsxvWvnj"))()
-	
+
+end)
+
+TextButton.MouseButton1Down:connect(function()
+	if password.Text =="Ezx34" or "Ex22" then
+		LoginFrame.Visible = false
+		XlFrame.Visible = true
+		DisFrame.Visible = true
+	end
 end)
