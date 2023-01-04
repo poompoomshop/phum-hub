@@ -478,3 +478,9 @@ TextButton.MouseButton1Down:connect(function()
 		DisFrame.Visible = true
 	end
 end)
+
+
+bypass.MouseButton1Down:connect(function()
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/daddysyn/synergy/additional/betterbypasser",true))()
+end)
