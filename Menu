@@ -80,6 +80,7 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.121107273, 0, 0.311805189, 0)
 ScrollingFrame.Size = UDim2.new(0.726643562, 0, 0.616051853, 0)
+ScrollingFrame.Visible = false
 
 anti.Name = "anti"
 anti.Parent = ScrollingFrame
@@ -133,8 +134,9 @@ LoginFrame.Size = UDim2.new(0.560283661, 0, 0.580528855, 0)
 Cikme.Name = "Cikme"
 Cikme.Parent = LoginFrame
 Cikme.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cikme.BackgroundTransparency = 1.000
 Cikme.Size = UDim2.new(1.00000012, 0, 0.999999881, 0)
-Cikme.Image = "http://www.roblox.com/asset/?id=10511855986"
+Cikme.Image = "http://www.roblox.com/asset/?id=11330899264"
 
 UICorner_5.Parent = Cikme
 
@@ -160,7 +162,7 @@ BigFrame.Position = UDim2.new(0.596532702, 0, 0.758413434, 0)
 BigFrame.Size = UDim2.new(0.205673754, 0, 0.121394232, 0)
 BigFrame.Active = true
 BigFrame.Draggable = true
-BigFrame.Visible = true
+BigFrame.Visible = false
 
 Add.Name = "Add"
 Add.Parent = BigFrame
@@ -195,7 +197,7 @@ end)
 
 Add.MouseButton1Down:connect(function()
 	MenuFrame.Visible = true
-	Exit.Visible = false
+	Exit.Visible = true
 	Add.Visible = false
 end)
 
@@ -218,5 +220,63 @@ anti.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/gsxvWvnj"))()
 
 end)
+----
+local function GQCKM_fake_script() -- Title.Script 
+	local script = Instance.new('Script', Title)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(GQCKM_fake_script)()
 
 
