@@ -160,6 +160,7 @@ BigFrame.Position = UDim2.new(0.596532702, 0, 0.758413434, 0)
 BigFrame.Size = UDim2.new(0.205673754, 0, 0.121394232, 0)
 BigFrame.Active = true
 BigFrame.Draggable = true
+BigFrame.Visible = true
 
 Add.Name = "Add"
 Add.Parent = BigFrame
