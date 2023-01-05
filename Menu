@@ -134,7 +134,7 @@ Cikme.Name = "Cikme"
 Cikme.Parent = LoginFrame
 Cikme.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Cikme.Size = UDim2.new(1.00000012, 0, 0.999999881, 0)
-Cikme.Image = "http://www.roblox.com/asset/?id=10729455634"
+Cikme.Image = "http://www.roblox.com/asset/?id=10511855986"
 
 UICorner_5.Parent = Cikme
 
