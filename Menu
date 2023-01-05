@@ -9,8 +9,6 @@ local UICorner = Instance.new("UICorner")
 local Title = Instance.new("TextLabel")
 local BobFrame = Instance.new("Frame")
 local Pan = Instance.new("TextButton")
-local Add = Instance.new("TextButton")
-local Exit = Instance.new("TextButton")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local anti = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
@@ -22,6 +20,9 @@ local LoginFrame = Instance.new("Frame")
 local Cikme = Instance.new("ImageButton")
 local UICorner_5 = Instance.new("UICorner")
 local Til = Instance.new("TextLabel")
+local BigFrame = Instance.new("Frame")
+local Add = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
 
 --Properties:
 
@@ -72,31 +73,6 @@ Pan.TextColor3 = Color3.fromRGB(255, 255, 255)
 Pan.TextScaled = true
 Pan.TextSize = 14.000
 Pan.TextWrapped = true
-
-Add.Name = "Add"
-Add.Parent = BobFrame
-Add.BackgroundColor3 = Color3.fromRGB(31, 255, 15)
-Add.Position = UDim2.new(1.10140717, 0, -2.27316856, 0)
-Add.Size = UDim2.new(0.13601175, 0, 1.21844661, 0)
-Add.Visible = false
-Add.Font = Enum.Font.Bangers
-Add.Text = "-"
-Add.TextColor3 = Color3.fromRGB(255, 255, 255)
-Add.TextScaled = true
-Add.TextSize = 14.000
-Add.TextWrapped = true
-
-Exit.Name = "Exit"
-Exit.Parent = BobFrame
-Exit.BackgroundColor3 = Color3.fromRGB(255, 51, 0)
-Exit.Position = UDim2.new(1.10140717, 0, -2.27316856, 0)
-Exit.Size = UDim2.new(0.13601175, 0, 1.21844661, 0)
-Exit.Font = Enum.Font.Bangers
-Exit.Text = "X"
-Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
-Exit.TextScaled = true
-Exit.TextSize = 14.000
-Exit.TextWrapped = true
 
 ScrollingFrame.Parent = MenuFrame
 ScrollingFrame.Active = true
@@ -153,8 +129,6 @@ LoginFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoginFrame.BackgroundTransparency = 1.000
 LoginFrame.Position = UDim2.new(0.241922796, 0, 0.179086536, 0)
 LoginFrame.Size = UDim2.new(0.560283661, 0, 0.580528855, 0)
-LoginFrame.Active = true
-LoginFrame.Draggable = true
 
 Cikme.Name = "Cikme"
 Cikme.Parent = LoginFrame
@@ -177,20 +151,57 @@ Til.TextScaled = true
 Til.TextSize = 14.000
 Til.TextStrokeTransparency = 0.000
 Til.TextWrapped = true
------- SCRIPT HOT
+
+BigFrame.Name = "BigFrame"
+BigFrame.Parent = poom
+BigFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BigFrame.BackgroundTransparency = 1.000
+BigFrame.Position = UDim2.new(0.596532702, 0, 0.758413434, 0)
+BigFrame.Size = UDim2.new(0.205673754, 0, 0.121394232, 0)
+BigFrame.Active = true
+BigFrame.Draggable = true
+
+Add.Name = "Add"
+Add.Parent = BigFrame
+Add.BackgroundColor3 = Color3.fromRGB(31, 255, 15)
+Add.Position = UDim2.new(0.0937443897, 0, 0.251583874, 0)
+Add.Size = UDim2.new(0.806509554, 0, 0.495674372, 0)
+Add.Font = Enum.Font.Bangers
+Add.Text = "-"
+Add.TextColor3 = Color3.fromRGB(255, 255, 255)
+Add.TextScaled = true
+Add.TextSize = 14.000
+Add.TextWrapped = true
+
+Exit.Name = "Exit"
+Exit.Parent = BigFrame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 51, 0)
+Exit.Position = UDim2.new(0.0937443897, 0, 0.251583874, 0)
+Exit.Size = UDim2.new(0.806509554, 0, 0.495674372, 0)
+Exit.Font = Enum.Font.Bangers
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+
 Cikme.MouseButton1Down:connect(function()
-	LoginFrame.Visible = false
-	MenuFrame.Visible = true
+	LoginFrame.Visible = false --- false = hide 
+	MenuFrame.Visible = true--- true = dont hide 
+	BigFrame.Visible = true
 end)
 
 Add.MouseButton1Down:connect(function()
 	MenuFrame.Visible = true
 	Exit.Visible = false
+	Add.Visible = false
 end)
 
 Exit.MouseButton1Down:connect(function()
 	MenuFrame.Visible = false
 	Add.Visible = true
+	Exit.Visible = false
 end)
 
 Pan.MouseButton1Down:connect(function()
@@ -206,3 +217,5 @@ anti.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/gsxvWvnj"))()
 
 end)
+
+
