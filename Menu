@@ -3,484 +3,206 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
-local LoginFrame = Instance.new("Frame")
+local poom = Instance.new("ScreenGui")
+local MenuFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local password = Instance.new("TextBox")
-local title = Instance.new("TextButton")
-local title_2 = Instance.new("TextButton")
-local TextButton = Instance.new("TextButton")
-local DisFrame = Instance.new("Frame")
-local Cr2 = Instance.new("TextBox")
-local UICorner_2 = Instance.new("UICorner")
-local XlFrame = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local craft = Instance.new("TextButton")
-local craftitem = Instance.new("TextBox")
-local title_3 = Instance.new("TextButton")
-local title_4 = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local BobFrame = Instance.new("Frame")
+local Pan = Instance.new("TextButton")
+local Add = Instance.new("TextButton")
 local Exit = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
 local anti = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
 local bypass = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local nocl = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local LoginFrame = Instance.new("Frame")
+local Cikme = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local Til = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+poom.Name = "poom"
+poom.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+poom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-LoginFrame.Name = "LoginFrame"
-LoginFrame.Parent = ScreenGui
-LoginFrame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
-LoginFrame.BorderSizePixel = 0
-LoginFrame.Position = UDim2.new(0.389049619, 0, 0.253605783, 0)
-LoginFrame.Size = UDim2.new(0.298493832, 0, 0.412259609, 0)
+MenuFrame.Name = "MenuFrame"
+MenuFrame.Parent = poom
+MenuFrame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+MenuFrame.Position = UDim2.new(0.175728947, 0, 0.153904989, 0)
+MenuFrame.Size = UDim2.new(0.683215082, 0, 0.612712502, 0)
+MenuFrame.Visible = false
+MenuFrame.Active = true
+MenuFrame.Draggable = true
 
-UICorner.Parent = LoginFrame
+UICorner.Parent = MenuFrame
 
-password.Name = "password"
-password.Parent = LoginFrame
-password.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-password.BackgroundTransparency = 0.500
-password.BorderSizePixel = 0
-password.Position = UDim2.new(0.255538493, 0, 0.431486875, 0)
-password.Size = UDim2.new(0.469930947, 0, 0.133381918, 0)
-password.Font = Enum.Font.SourceSans
-password.Text = "Password >:)"
-password.TextColor3 = Color3.fromRGB(0, 0, 0)
-password.TextScaled = true
-password.TextSize = 14.000
-password.TextWrapped = true
+Title.Name = "Title"
+Title.Parent = MenuFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0472895056, 0, -0.156931415, 0)
+Title.Size = UDim2.new(0.85351789, 0, 0.289885283, 0)
+Title.Font = Enum.Font.Bangers
+Title.Text = "Phum Phum Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
 
-title.Name = "title"
-title.Parent = LoginFrame
-title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title.BackgroundTransparency = 1.000
-title.Position = UDim2.new(0.114620782, 0, 0.174927115, 0)
-title.Size = UDim2.new(0.741413236, 0, 0.177842587, 0)
-title.Font = Enum.Font.LuckiestGuy
-title.Text = "🎄Phum Phum Hub"
-title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextScaled = true
-title.TextSize = 14.000
-title.TextWrapped = true
+BobFrame.Name = "BobFrame"
+BobFrame.Parent = MenuFrame
+BobFrame.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+BobFrame.BorderSizePixel = 0
+BobFrame.Position = UDim2.new(0.122260645, 0, 0.129468426, 0)
+BobFrame.Size = UDim2.new(0.725490272, 0, 0.0863122866, 0)
 
-title_2.Name = "title"
-title_2.Parent = LoginFrame
-title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_2.BackgroundTransparency = 1.000
-title_2.Position = UDim2.new(0.114620782, 0, 0.174927115, 0)
-title_2.Size = UDim2.new(0.741413236, 0, 0.177842587, 0)
-title_2.Font = Enum.Font.LuckiestGuy
-title_2.Text = "🎄Phum Phum Hub"
-title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_2.TextScaled = true
-title_2.TextSize = 14.000
-title_2.TextWrapped = true
+Pan.Name = "Pan"
+Pan.Parent = BobFrame
+Pan.BackgroundColor3 = Color3.fromRGB(24, 93, 255)
+Pan.BorderSizePixel = 0
+Pan.Position = UDim2.new(0.0111287758, 0, 0.113636367, 0)
+Pan.Size = UDim2.new(0.101748757, 0, 0.75, 0)
+Pan.Font = Enum.Font.Bangers
+Pan.Text = "Panel"
+Pan.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pan.TextScaled = true
+Pan.TextSize = 14.000
+Pan.TextWrapped = true
 
-TextButton.Parent = LoginFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0.234959513, 0, 0.712119162, 0)
-TextButton.Size = UDim2.new(0.506878972, 0, 0.133522347, 0)
-TextButton.Font = Enum.Font.SourceSansBold
-TextButton.Text = "Done"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-
-DisFrame.Name = "DisFrame"
-DisFrame.Parent = ScreenGui
-DisFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-DisFrame.Position = UDim2.new(0, 0, 0.920673072, 0)
-DisFrame.Size = UDim2.new(0.350584686, 0, 0.0793269202, 0)
-DisFrame.Visible = false
-
-Cr2.Name = "Cr2"
-Cr2.Parent = DisFrame
-Cr2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-Cr2.BackgroundTransparency = 1.000
-Cr2.Position = UDim2.new(0.0831662565, 0, 0.0454546213, 0)
-Cr2.Selectable = false
-Cr2.Size = UDim2.new(0.741753101, 0, 0.909090936, 0)
-Cr2.ClearTextOnFocus = false
-Cr2.Font = Enum.Font.Bangers
-Cr2.Text = "https://discord.gg/Sz78UWTV6A"
-Cr2.TextColor3 = Color3.fromRGB(17, 152, 255)
-Cr2.TextScaled = true
-Cr2.TextSize = 14.000
-Cr2.TextWrapped = true
-
-UICorner_2.Parent = DisFrame
-
-XlFrame.Name = "XlFrame"
-XlFrame.Parent = ScreenGui
-XlFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-XlFrame.Position = UDim2.new(0.330963135, 0, 0.248798102, 0)
-XlFrame.Size = UDim2.new(0.390433133, 0, 0.451923072, 0)
-XlFrame.Visible = false
-
-UICorner_3.Parent = XlFrame
-
-craft.Name = "craft"
-craft.Parent = XlFrame
-craft.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-craft.Position = UDim2.new(0.305127859, 0, 0.351443738, 0)
-craft.Size = UDim2.new(0.389581442, 0, 0.169642851, 0)
-craft.Font = Enum.Font.SourceSans
-craft.Text = "Craft"
-craft.TextColor3 = Color3.fromRGB(0, 0, 0)
-craft.TextScaled = true
-craft.TextSize = 14.000
-craft.TextWrapped = true
-
-craftitem.Name = "craftitem"
-craftitem.Parent = XlFrame
-craftitem.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-craftitem.BorderColor3 = Color3.fromRGB(136, 7, 7)
-craftitem.Position = UDim2.new(0.305127859, 0, 0.567914069, 0)
-craftitem.Size = UDim2.new(0.389581442, 0, 0.205357149, 0)
-craftitem.Font = Enum.Font.SourceSans
-craftitem.Text = ""
-craftitem.TextColor3 = Color3.fromRGB(255, 255, 255)
-craftitem.TextScaled = true
-craftitem.TextSize = 14.000
-craftitem.TextWrapped = true
-
-title_3.Name = "title"
-title_3.Parent = XlFrame
-title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_3.BackgroundTransparency = 1.000
-title_3.Position = UDim2.new(0.0986957252, 0, 0.0283946581, 0)
-title_3.Size = UDim2.new(0.775037885, 0, 0.289893627, 0)
-title_3.Font = Enum.Font.LuckiestGuy
-title_3.Text = "🎄Phum Phum Hub"
-title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_3.TextScaled = true
-title_3.TextSize = 14.000
-title_3.TextWrapped = true
-
-title_4.Name = "title"
-title_4.Parent = XlFrame
-title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_4.BackgroundTransparency = 1.000
-title_4.Position = UDim2.new(0.213740408, 0, 0.818288267, 0)
-title_4.Size = UDim2.new(0.597425044, 0, 0.162234038, 0)
-title_4.Font = Enum.Font.LuckiestGuy
-title_4.Text = "Simple Craft"
-title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_4.TextScaled = true
-title_4.TextSize = 14.000
-title_4.TextWrapped = true
+Add.Name = "Add"
+Add.Parent = BobFrame
+Add.BackgroundColor3 = Color3.fromRGB(31, 255, 15)
+Add.Position = UDim2.new(1.10140717, 0, -2.27316856, 0)
+Add.Size = UDim2.new(0.13601175, 0, 1.21844661, 0)
+Add.Visible = false
+Add.Font = Enum.Font.Bangers
+Add.Text = "-"
+Add.TextColor3 = Color3.fromRGB(255, 255, 255)
+Add.TextScaled = true
+Add.TextSize = 14.000
+Add.TextWrapped = true
 
 Exit.Name = "Exit"
-Exit.Parent = XlFrame
-Exit.BackgroundColor3 = Color3.fromRGB(255, 34, 34)
-Exit.BorderSizePixel = 0
-Exit.Position = UDim2.new(0.908045292, 0, -0.0941831172, 0)
-Exit.Size = UDim2.new(0.139264569, 0, 0.191869259, 0)
-Exit.Font = Enum.Font.LuckiestGuy
-Exit.Text = "x"
+Exit.Parent = BobFrame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 51, 0)
+Exit.Position = UDim2.new(1.10140717, 0, -2.27316856, 0)
+Exit.Size = UDim2.new(0.13601175, 0, 1.21844661, 0)
+Exit.Font = Enum.Font.Bangers
+Exit.Text = "X"
 Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
 Exit.TextScaled = true
 Exit.TextSize = 14.000
 Exit.TextWrapped = true
 
+ScrollingFrame.Parent = MenuFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.121107273, 0, 0.311805189, 0)
+ScrollingFrame.Size = UDim2.new(0.726643562, 0, 0.616051853, 0)
+
 anti.Name = "anti"
-anti.Parent = XlFrame
-anti.BackgroundColor3 = Color3.fromRGB(1, 98, 255)
-anti.Position = UDim2.new(0.0972400904, 0, 0.997720361, 0)
-anti.Size = UDim2.new(0.274492621, 0, 0.169642851, 0)
-anti.Font = Enum.Font.SourceSans
-anti.Text = "🛡anti kick"
+anti.Parent = ScrollingFrame
+anti.BackgroundColor3 = Color3.fromRGB(17, 124, 255)
+anti.Position = UDim2.new(0.0269840658, 0, 0.0191874951, 0)
+anti.Size = UDim2.new(0.25555557, 0, 0.0512968078, 0)
+anti.Font = Enum.Font.Bangers
+anti.Text = "🛡anit-kick"
 anti.TextColor3 = Color3.fromRGB(0, 0, 0)
 anti.TextScaled = true
 anti.TextSize = 14.000
 anti.TextWrapped = true
 
+UICorner_2.Parent = anti
+
 bypass.Name = "bypass"
-bypass.Parent = XlFrame
-bypass.BackgroundColor3 = Color3.fromRGB(255, 130, 20)
-bypass.Position = UDim2.new(0.634115279, 0, 0.997720361, 0)
-bypass.Size = UDim2.new(0.274492621, 0, 0.169642851, 0)
-bypass.Font = Enum.Font.SourceSans
-bypass.Text = "💬chat pass"
+bypass.Parent = ScrollingFrame
+bypass.BackgroundColor3 = Color3.fromRGB(7, 255, 119)
+bypass.Position = UDim2.new(0.326984107, 0, 0.0191874951, 0)
+bypass.Size = UDim2.new(0.25555557, 0, 0.0512968078, 0)
+bypass.Font = Enum.Font.Bangers
+bypass.Text = "💬chat bypass"
 bypass.TextColor3 = Color3.fromRGB(0, 0, 0)
 bypass.TextScaled = true
 bypass.TextSize = 14.000
 bypass.TextWrapped = true
 
--- Scripts:
+UICorner_3.Parent = bypass
 
-local function PBWX_fake_script() -- title.Script 
-	local script = Instance.new('Script', title)
+nocl.Name = "nocl"
+nocl.Parent = ScrollingFrame
+nocl.BackgroundColor3 = Color3.fromRGB(226, 255, 34)
+nocl.Position = UDim2.new(0.609523773, 0, 0.0191874951, 0)
+nocl.Size = UDim2.new(0.25555557, 0, 0.0512968078, 0)
+nocl.Font = Enum.Font.Bangers
+nocl.Text = "👤noclip"
+nocl.TextColor3 = Color3.fromRGB(0, 0, 0)
+nocl.TextScaled = true
+nocl.TextSize = 14.000
+nocl.TextWrapped = true
 
-	local text = script.Parent
-	local add = 10
-	wait(1)
-	local k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(k/255,0/255,0/255)
-		k = k + add
-		wait()
-	end
-	while true do
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,k/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255,k/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(k/255,0/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-			k = k + add
-			wait()
-		end
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-			k = k + add
-			wait()
-		end
-	end
-end
-coroutine.wrap(PBWX_fake_script)()
-local function CAPO_fake_script() -- title_2.Script 
-	local script = Instance.new('Script', title_2)
+UICorner_4.Parent = nocl
 
-	local text = script.Parent
-	local add = 10
-	wait(1)
-	local k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(k/255,0/255,0/255)
-		k = k + add
-		wait()
-	end
-	while true do
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,k/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255,k/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(k/255,0/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-			k = k + add
-			wait()
-		end
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-			k = k + add
-			wait()
-		end
-	end
-end
-coroutine.wrap(CAPO_fake_script)()
-local function SOUBSBX_fake_script() -- title_3.Script 
-	local script = Instance.new('Script', title_3)
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = poom
+LoginFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginFrame.BackgroundTransparency = 1.000
+LoginFrame.Position = UDim2.new(0.241922796, 0, 0.179086536, 0)
+LoginFrame.Size = UDim2.new(0.560283661, 0, 0.580528855, 0)
+LoginFrame.Active = true
+LoginFrame.Draggable = true
 
-	local text = script.Parent
-	local add = 10
-	wait(1)
-	local k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(k/255,0/255,0/255)
-		k = k + add
-		wait()
-	end
-	while true do
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,k/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255,k/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(k/255,0/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-			k = k + add
-			wait()
-		end
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-			k = k + add
-			wait()
-		end
-	end
-end
-coroutine.wrap(SOUBSBX_fake_script)()
-local function DEMEE_fake_script() -- title_4.Script 
-	local script = Instance.new('Script', title_4)
+Cikme.Name = "Cikme"
+Cikme.Parent = LoginFrame
+Cikme.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cikme.Size = UDim2.new(1.00000012, 0, 0.999999881, 0)
+Cikme.Image = "http://www.roblox.com/asset/?id=10729455634"
 
-	local text = script.Parent
-	local add = 10
-	wait(1)
-	local k = 1
-	while k <= 255 do
-		text.TextColor3 = Color3.new(k/255,0/255,0/255)
-		k = k + add
-		wait()
-	end
-	while true do
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,k/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255,k/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(k/255,0/255,255/255)
-			k = k + add
-			wait()
-		end
-		k = 1
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-			k = k + add
-			wait()
-		end
-		while k <= 255 do
-			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-			k = k + add
-			wait()
-		end
-	end
-end
-coroutine.wrap(DEMEE_fake_script)()
-local function RQMV_fake_script() -- Exit.Script 
-	local script = Instance.new('Script', Exit)
+UICorner_5.Parent = Cikme
 
-	script.Parent.MouseButton1Click:Connect(function()
-		local XlFrame = script.Parent.Parent.XlFrame
-		local Exit = script.Parent
-		if XlFrame.Visible == true then
-			XlFrame.Visible = false
-			Exit.Text = "x"
-		else
-			XlFrame.Visible = true
-			Exit.Text = "-"
-		end
-	end)
-end
-coroutine.wrap(RQMV_fake_script)()
+Til.Name = "Til"
+Til.Parent = Cikme
+Til.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Til.BackgroundTransparency = 1.000
+Til.Position = UDim2.new(0.244725734, 0, 0.29192552, 0)
+Til.Size = UDim2.new(0.49367094, 0, 0.469979346, 0)
+Til.Font = Enum.Font.Highway
+Til.Text = "Big is Leopard :("
+Til.TextColor3 = Color3.fromRGB(255, 172, 70)
+Til.TextScaled = true
+Til.TextSize = 14.000
+Til.TextStrokeTransparency = 0.000
+Til.TextWrapped = true
+------ SCRIPT HOT
+Cikme.MouseButton1Down:connect(function()
+	LoginFrame.Visible = false
+	MenuFrame.Visible = true
+end)
 
--- Other script gay poom
-craft.MouseButton1Down:connect(function() 
-	local item = craftitem.Text
-	local CI = item
-	local Event = game:GetService("ReplicatedStorage").Events.CraftItem
-	Event:FireServer(CI)
+Add.MouseButton1Down:connect(function()
+	MenuFrame.Visible = true
+	Exit.Visible = false
+end)
+
+Exit.MouseButton1Down:connect(function()
+	MenuFrame.Visible = false
+	Add.Visible = true
+end)
+
+Pan.MouseButton1Down:connect(function()
+	ScrollingFrame.Visible = true
+end)
+
+bypass.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/8AnMCh3T"))()
 end)
 
 anti.MouseButton1Down:connect(function() 
 
 	loadstring(game:HttpGet("https://pastebin.com/raw/gsxvWvnj"))()
 
-end)
-
-TextButton.MouseButton1Down:connect(function()
-	if password.Text =="Ezx34" or "Ex22" then
-		LoginFrame.Visible = false
-		XlFrame.Visible = true
-		DisFrame.Visible = true
-	end
-end)
-
-
-bypass.MouseButton1Down:connect(function()
-
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/daddysyn/synergy/additional/betterbypasser",true))()
 end)
