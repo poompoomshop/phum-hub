@@ -9,17 +9,39 @@ local UICorner = Instance.new("UICorner")
 local Title = Instance.new("TextLabel")
 local BobFrame = Instance.new("Frame")
 local Pan = Instance.new("TextButton")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local anti = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local bypass = Instance.new("TextButton")
+local Don = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local nocl = Instance.new("TextButton")
+local PanelFrame = Instance.new("ScrollingFrame")
+local anti = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local LoginFrame = Instance.new("Frame")
-local Cikme = Instance.new("ImageButton")
+local bypass = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local Til = Instance.new("TextLabel")
+local nocl = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local walksp2 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local walksp1 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local DonoFrame = Instance.new("ScrollingFrame")
+local _5Rs = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local _10Rs = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local _20Rs = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local _40Rs = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local _60Rs = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local LoginFrame = Instance.new("Frame")
+local Quest = Instance.new("TextLabel")
+local PC2 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Cm2 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
 local BigFrame = Instance.new("Frame")
 local Add = Instance.new("TextButton")
 local Exit = Instance.new("TextButton")
@@ -45,7 +67,7 @@ Title.Name = "Title"
 Title.Parent = MenuFrame
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.0472895056, 0, -0.156931415, 0)
+Title.Position = UDim2.new(0.0728351027, 0, -0.160854697, 0)
 Title.Size = UDim2.new(0.85351789, 0, 0.289885283, 0)
 Title.Font = Enum.Font.Bangers
 Title.Text = "Phum Phum Hub"
@@ -65,25 +87,43 @@ Pan.Name = "Pan"
 Pan.Parent = BobFrame
 Pan.BackgroundColor3 = Color3.fromRGB(24, 93, 255)
 Pan.BorderSizePixel = 0
-Pan.Position = UDim2.new(0.0111287758, 0, 0.113636367, 0)
-Pan.Size = UDim2.new(0.101748757, 0, 0.75, 0)
+Pan.Position = UDim2.new(0.011128759, 0, 0.113636367, 0)
+Pan.Size = UDim2.new(0.12783134, 0, 0.75, 0)
 Pan.Font = Enum.Font.Bangers
-Pan.Text = "Panel"
+Pan.Text = "🎮Panel"
 Pan.TextColor3 = Color3.fromRGB(255, 255, 255)
 Pan.TextScaled = true
 Pan.TextSize = 14.000
 Pan.TextWrapped = true
 
-ScrollingFrame.Parent = MenuFrame
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0.121107273, 0, 0.311805189, 0)
-ScrollingFrame.Size = UDim2.new(0.726643562, 0, 0.616051853, 0)
-ScrollingFrame.Visible = false
+UICorner_2.Parent = Pan
+
+Don.Name = "Don"
+Don.Parent = BobFrame
+Don.BackgroundColor3 = Color3.fromRGB(69, 255, 81)
+Don.BorderSizePixel = 0
+Don.Position = UDim2.new(0.16501601, 0, 0.113636367, 0)
+Don.Size = UDim2.new(0.12783134, 0, 0.75, 0)
+Don.Font = Enum.Font.Bangers
+Don.Text = "💲Dono"
+Don.TextColor3 = Color3.fromRGB(255, 255, 255)
+Don.TextScaled = true
+Don.TextSize = 14.000
+Don.TextWrapped = true
+
+UICorner_3.Parent = Don
+
+PanelFrame.Name = "PanelFrame"
+PanelFrame.Parent = MenuFrame
+PanelFrame.Active = true
+PanelFrame.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+PanelFrame.BorderSizePixel = 0
+PanelFrame.Position = UDim2.new(0.121107273, 0, 0.311805189, 0)
+PanelFrame.Size = UDim2.new(0.726643562, 0, 0.616051853, 0)
+PanelFrame.Visible = false
 
 anti.Name = "anti"
-anti.Parent = ScrollingFrame
+anti.Parent = PanelFrame
 anti.BackgroundColor3 = Color3.fromRGB(17, 124, 255)
 anti.Position = UDim2.new(0.0269840658, 0, 0.0191874951, 0)
 anti.Size = UDim2.new(0.25555557, 0, 0.0512968078, 0)
@@ -94,10 +134,10 @@ anti.TextScaled = true
 anti.TextSize = 14.000
 anti.TextWrapped = true
 
-UICorner_2.Parent = anti
+UICorner_4.Parent = anti
 
 bypass.Name = "bypass"
-bypass.Parent = ScrollingFrame
+bypass.Parent = PanelFrame
 bypass.BackgroundColor3 = Color3.fromRGB(7, 255, 119)
 bypass.Position = UDim2.new(0.326984107, 0, 0.0191874951, 0)
 bypass.Size = UDim2.new(0.25555557, 0, 0.0512968078, 0)
@@ -108,10 +148,10 @@ bypass.TextScaled = true
 bypass.TextSize = 14.000
 bypass.TextWrapped = true
 
-UICorner_3.Parent = bypass
+UICorner_5.Parent = bypass
 
 nocl.Name = "nocl"
-nocl.Parent = ScrollingFrame
+nocl.Parent = PanelFrame
 nocl.BackgroundColor3 = Color3.fromRGB(226, 255, 34)
 nocl.Position = UDim2.new(0.609523773, 0, 0.0191874951, 0)
 nocl.Size = UDim2.new(0.25555557, 0, 0.0512968078, 0)
@@ -122,37 +162,167 @@ nocl.TextScaled = true
 nocl.TextSize = 14.000
 nocl.TextWrapped = true
 
-UICorner_4.Parent = nocl
+UICorner_6.Parent = nocl
+
+walksp2.Name = "walksp2"
+walksp2.Parent = PanelFrame
+walksp2.BackgroundColor3 = Color3.fromRGB(150, 144, 144)
+walksp2.Position = UDim2.new(0.326976866, 0, 0.0947107449, 0)
+walksp2.Size = UDim2.new(0.25555557, 0, 0.0512968078, 0)
+walksp2.Font = Enum.Font.Bangers
+walksp2.Text = "👽wks 50"
+walksp2.TextColor3 = Color3.fromRGB(0, 0, 0)
+walksp2.TextScaled = true
+walksp2.TextSize = 14.000
+walksp2.TextWrapped = true
+
+UICorner_7.Parent = walksp2
+
+walksp1.Name = "walksp1"
+walksp1.Parent = PanelFrame
+walksp1.BackgroundColor3 = Color3.fromRGB(150, 144, 144)
+walksp1.Position = UDim2.new(0.026201129, 0, 0.0947107449, 0)
+walksp1.Size = UDim2.new(0.25555557, 0, 0.0512968078, 0)
+walksp1.Font = Enum.Font.Bangers
+walksp1.Text = "👽wks 16"
+walksp1.TextColor3 = Color3.fromRGB(0, 0, 0)
+walksp1.TextScaled = true
+walksp1.TextSize = 14.000
+walksp1.TextWrapped = true
+
+UICorner_8.Parent = walksp1
+
+DonoFrame.Name = "DonoFrame"
+DonoFrame.Parent = MenuFrame
+DonoFrame.Active = true
+DonoFrame.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+DonoFrame.BorderSizePixel = 0
+DonoFrame.Position = UDim2.new(0.121107273, 0, 0.311805189, 0)
+DonoFrame.Size = UDim2.new(0.726643562, 0, 0.616051853, 0)
+DonoFrame.Visible = false
+
+_5Rs.Name = "5Rs"
+_5Rs.Parent = DonoFrame
+_5Rs.BackgroundColor3 = Color3.fromRGB(117, 255, 32)
+_5Rs.Position = UDim2.new(0.0439108498, 0, -0.000480744988, 0)
+_5Rs.Size = UDim2.new(0.884450436, 0, 0.166534051, 0)
+_5Rs.Font = Enum.Font.Bangers
+_5Rs.Text = "5 R$"
+_5Rs.TextColor3 = Color3.fromRGB(0, 0, 0)
+_5Rs.TextScaled = true
+_5Rs.TextSize = 14.000
+_5Rs.TextWrapped = true
+
+UICorner_9.Parent = _5Rs
+
+_10Rs.Name = "10Rs"
+_10Rs.Parent = DonoFrame
+_10Rs.BackgroundColor3 = Color3.fromRGB(117, 255, 32)
+_10Rs.Position = UDim2.new(0.0439108498, 0, 0.177047938, 0)
+_10Rs.Size = UDim2.new(0.884450436, 0, 0.166534051, 0)
+_10Rs.Font = Enum.Font.Bangers
+_10Rs.Text = "10 R$"
+_10Rs.TextColor3 = Color3.fromRGB(0, 0, 0)
+_10Rs.TextScaled = true
+_10Rs.TextSize = 14.000
+_10Rs.TextWrapped = true
+
+UICorner_10.Parent = _10Rs
+
+_20Rs.Name = "20Rs"
+_20Rs.Parent = DonoFrame
+_20Rs.BackgroundColor3 = Color3.fromRGB(117, 255, 32)
+_20Rs.Position = UDim2.new(0.0439108498, 0, 0.35751909, 0)
+_20Rs.Size = UDim2.new(0.884450436, 0, 0.166534051, 0)
+_20Rs.Font = Enum.Font.Bangers
+_20Rs.Text = "20 R$"
+_20Rs.TextColor3 = Color3.fromRGB(0, 0, 0)
+_20Rs.TextScaled = true
+_20Rs.TextSize = 14.000
+_20Rs.TextWrapped = true
+
+UICorner_11.Parent = _20Rs
+
+_40Rs.Name = "40Rs"
+_40Rs.Parent = DonoFrame
+_40Rs.BackgroundColor3 = Color3.fromRGB(117, 255, 32)
+_40Rs.Position = UDim2.new(0.0439108498, 0, 0.537990212, 0)
+_40Rs.Size = UDim2.new(0.884450436, 0, 0.166534051, 0)
+_40Rs.Font = Enum.Font.Bangers
+_40Rs.Text = "40R$"
+_40Rs.TextColor3 = Color3.fromRGB(0, 0, 0)
+_40Rs.TextScaled = true
+_40Rs.TextSize = 14.000
+_40Rs.TextWrapped = true
+
+UICorner_12.Parent = _40Rs
+
+_60Rs.Name = "60Rs"
+_60Rs.Parent = DonoFrame
+_60Rs.BackgroundColor3 = Color3.fromRGB(117, 255, 32)
+_60Rs.Position = UDim2.new(0.0426087901, 0, 0.729250371, 0)
+_60Rs.Size = UDim2.new(0.884450436, 0, 0.166534051, 0)
+_60Rs.Font = Enum.Font.Bangers
+_60Rs.Text = "60R$"
+_60Rs.TextColor3 = Color3.fromRGB(0, 0, 0)
+_60Rs.TextScaled = true
+_60Rs.TextSize = 14.000
+_60Rs.TextWrapped = true
+
+UICorner_13.Parent = _60Rs
 
 LoginFrame.Name = "LoginFrame"
 LoginFrame.Parent = poom
-LoginFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LoginFrame.BackgroundTransparency = 1.000
-LoginFrame.Position = UDim2.new(0.241922796, 0, 0.179086536, 0)
-LoginFrame.Size = UDim2.new(0.560283661, 0, 0.580528855, 0)
+LoginFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+LoginFrame.Size = UDim2.new(1.00000012, 0, 1, 0)
 
-Cikme.Name = "Cikme"
-Cikme.Parent = LoginFrame
-Cikme.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Cikme.BackgroundTransparency = 1.000
-Cikme.Size = UDim2.new(1.00000012, 0, 0.999999881, 0)
-Cikme.Image = "http://www.roblox.com/asset/?id=11330899264"
+Quest.Name = "Quest"
+Quest.Parent = LoginFrame
+Quest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Quest.BackgroundTransparency = 1.000
+Quest.Position = UDim2.new(0.27898559, 0, 0.0154832322, 0)
+Quest.Size = UDim2.new(0.539566219, 0, 0.197142825, 0)
+Quest.Font = Enum.Font.Highway
+Quest.Text = "คุณใช้แฮกในอะไร"
+Quest.TextColor3 = Color3.fromRGB(255, 255, 255)
+Quest.TextScaled = true
+Quest.TextSize = 14.000
+Quest.TextStrokeTransparency = 0.000
+Quest.TextWrapped = true
 
-UICorner_5.Parent = Cikme
+PC2.Name = "PC2"
+PC2.Parent = LoginFrame
+PC2.BackgroundColor3 = Color3.fromRGB(17, 243, 255)
+PC2.Position = UDim2.new(0.239172563, 0, 0.287259609, 0)
+PC2.Size = UDim2.new(0.208791181, 0, 0.510817289, 0)
+PC2.Font = Enum.Font.Fantasy
+PC2.Text = "คอม (Test)"
+PC2.TextColor3 = Color3.fromRGB(0, 0, 0)
+PC2.TextScaled = true
+PC2.TextSize = 14.000
+PC2.TextWrapped = true
 
-Til.Name = "Til"
-Til.Parent = Cikme
-Til.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Til.BackgroundTransparency = 1.000
-Til.Position = UDim2.new(0.244725734, 0, 0.29192552, 0)
-Til.Size = UDim2.new(0.49367094, 0, 0.469979346, 0)
-Til.Font = Enum.Font.Highway
-Til.Text = "Big is Leopard :("
-Til.TextColor3 = Color3.fromRGB(255, 172, 70)
-Til.TextScaled = true
-Til.TextSize = 14.000
-Til.TextStrokeTransparency = 0.000
-Til.TextWrapped = true
+UICorner_14.Parent = PC2
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 127, 191)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = PC2
+
+Cm2.Name = "Cm2"
+Cm2.Parent = LoginFrame
+Cm2.BackgroundColor3 = Color3.fromRGB(23, 255, 108)
+Cm2.Position = UDim2.new(0.627666354, 0, 0.287259609, 0)
+Cm2.Size = UDim2.new(0.208791181, 0, 0.510817289, 0)
+Cm2.Font = Enum.Font.Fantasy
+Cm2.Text = "มือถือ (Coming soon)"
+Cm2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cm2.TextScaled = true
+Cm2.TextSize = 14.000
+Cm2.TextWrapped = true
+
+UICorner_15.Parent = Cm2
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(14, 152, 62)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Cm2
 
 BigFrame.Name = "BigFrame"
 BigFrame.Parent = poom
@@ -160,15 +330,17 @@ BigFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 BigFrame.BackgroundTransparency = 1.000
 BigFrame.Position = UDim2.new(0.596532702, 0, 0.758413434, 0)
 BigFrame.Size = UDim2.new(0.205673754, 0, 0.121394232, 0)
+BigFrame.Visible = false
 BigFrame.Active = true
 BigFrame.Draggable = true
-BigFrame.Visible = false
+----------------------------- SIGMA
 
 Add.Name = "Add"
 Add.Parent = BigFrame
 Add.BackgroundColor3 = Color3.fromRGB(31, 255, 15)
 Add.Position = UDim2.new(0.0937443897, 0, 0.251583874, 0)
 Add.Size = UDim2.new(0.806509554, 0, 0.495674372, 0)
+Add.Visible = false
 Add.Font = Enum.Font.Bangers
 Add.Text = "-"
 Add.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -188,40 +360,9 @@ Exit.TextScaled = true
 Exit.TextSize = 14.000
 Exit.TextWrapped = true
 
+-- Scripts:
 
-Cikme.MouseButton1Down:connect(function()
-	LoginFrame.Visible = false --- false = hide 
-	MenuFrame.Visible = true--- true = dont hide 
-	BigFrame.Visible = true
-end)
-
-Add.MouseButton1Down:connect(function()
-	MenuFrame.Visible = true
-	Exit.Visible = true
-	Add.Visible = false
-end)
-
-Exit.MouseButton1Down:connect(function()
-	MenuFrame.Visible = false
-	Add.Visible = true
-	Exit.Visible = false
-end)
-
-Pan.MouseButton1Down:connect(function()
-	ScrollingFrame.Visible = true
-end)
-
-bypass.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/8AnMCh3T"))()
-end)
-
-anti.MouseButton1Down:connect(function() 
-
-	loadstring(game:HttpGet("https://pastebin.com/raw/gsxvWvnj"))()
-
-end)
-----
-local function GQCKM_fake_script() -- Title.Script 
+local function EYEYRD_fake_script() -- Title.Script 
 	local script = Instance.new('Script', Title)
 
 	local text = script.Parent
@@ -277,6 +418,144 @@ local function GQCKM_fake_script() -- Title.Script
 		end
 	end
 end
-coroutine.wrap(GQCKM_fake_script)()
+coroutine.wrap(EYEYRD_fake_script)()
+local function PPRYR_fake_script() -- MenuFrame.LocalScript 
+	local script = Instance.new('LocalScript', MenuFrame)
 
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse() .KeyDown:Connect(function(L)
+		if L =="l" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(PPRYR_fake_script)()
+local function COFXNT_fake_script() -- MenuFrame.LocalScript 
+	local script = Instance.new('LocalScript', MenuFrame)
 
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse() .KeyDown:Connect(function(P)
+		if P =="p" then
+			script.Parent.Visible = false
+		end
+	end)
+	
+end
+coroutine.wrap(COFXNT_fake_script)()
+------  ez hot
+PC2.MouseButton1Down:connect(function()
+	LoginFrame.Visible = false
+	PC2.Visible = false --- false = hide 
+	MenuFrame.Visible = true--- true = dont hide 
+	BigFrame.Visible = true
+end)
+
+Add.MouseButton1Down:connect(function()
+	MenuFrame.Visible = true
+	Exit.Visible = true
+	Add.Visible = false
+end)
+
+Exit.MouseButton1Down:connect(function()
+	MenuFrame.Visible = false
+	Add.Visible = true
+	Exit.Visible = false
+end)
+
+Pan.MouseButton1Down:connect(function()
+	PanelFrame.Visible = true
+	DonoFrame.Visible = false
+end)
+
+Don.MouseButton1Down:connect(function()
+	PanelFrame.Visible = false
+	DonoFrame.Visible = true
+end)
+--------------
+
+bypass.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/bart3876478326746387/392d9f3a6582fb3a86da2b074ba9a864/raw/fb0d02b60cc38b4d58b7a69288d92c03e1ab2609/chat%2520bypass%22"))()
+end)
+
+anti.MouseButton1Down:connect(function() 
+
+	loadstring(game:HttpGet("https://pastebin.com/raw/gsxvWvnj"))()
+
+end)
+
+nocl.MouseButton1Down:connect(function() 
+
+	loadstring(game:HttpGet("https://pastebin.com/raw/8AnMCh3T"))()
+
+end)
+
+walksp2.MouseButton1Down:connect(function() 
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+
+end)
+
+walksp1.MouseButton1Down:connect(function() 
+
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+
+end)
+----------------
+
+_5Rs.MouseButton1Down:connect(function() 
+
+	local player = game.Players.LocalPlayer
+	local DonateId = 000000000 --- Put your ID
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.MarketplaceService:PromptProductPurchase(player, DonateId)
+	end)
+
+end)
+
+_10Rs.MouseButton1Down:connect(function() 
+
+	local player = game.Players.LocalPlayer
+	local DonateId = 000000000 --- Put your ID
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.MarketplaceService:PromptProductPurchase(player, DonateId)
+	end)
+
+end)
+
+_20Rs.MouseButton1Down:connect(function() 
+
+	local player = game.Players.LocalPlayer
+	local DonateId = 000000000 --- Put your ID
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.MarketplaceService:PromptProductPurchase(player, DonateId)
+	end)
+	
+end)
+
+_40Rs.MouseButton1Down:connect(function() 
+
+	local player = game.Players.LocalPlayer
+	local DonateId = 000000000 --- Put your ID
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.MarketplaceService:PromptProductPurchase(player, DonateId)
+	end)
+
+end)
+
+_60Rs.MouseButton1Down:connect(function() 
+
+	local player = game.Players.LocalPlayer
+	local DonateId = 000000000 --- Put your ID
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.MarketplaceService:PromptProductPurchase(player, DonateId)
+	end)
+
+end)
