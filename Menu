@@ -26,7 +26,7 @@ local Section = Tab:NewSection("settings")
 Section:NewButton("auto clicks", "", function()
    while wait() do
 local A_1 = "swingKatana"
-local Event = game:GetService("Players").Sh1z3Ns.ninjaEvent
+local Event = game:GetService("Players").LocalPlayer.ninjaEvent
 Event:FireServer(A_1)
 end
 end)
