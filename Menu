@@ -1,77 +1,32 @@
--- Gui to Lua
--- Version: 3.2
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("PhumPhum HUB X ninja legend", "Sentinel")
+--new tab
+local Tab = Window:NewTab("teleports")
+local Section = Tab:NewSection("teleport")
 
--- Instances:
+Section:NewButton("starter land", "", function()
+   local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,1,false,-1), 
+{CFrame = CFrame.new(72.5088501, 3.38999939, 35.603981, -0.554425418, -2.54521471e-08, -0.832233429, -9.49776613e-09, 1, -2.42556268e-08, 0.832233429, -5.54357715e-09, -0.554425418)}):Play()
+end)
+Section:NewButton("end land", "", function()
+   local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,1,false,-1), 
+{CFrame = CFrame.new(96.7098465, 91304.2812, 59.3188705, 0.0749983117, 0.748358607, -0.659040689, -7.34146033e-09, 0.660902023, 0.750472188, 0.997183681, -0.0562841445, 0.0495665409)}):Play()
+end)
+--
+Section:NewLabel("TP coin&yinyang")
+Section:NewButton("COOMING SOON!!!!!!", "", function()
+ 
+end)
+--new tab ---------------------------
+local Tab = Window:NewTab("settings")
+local Section = Tab:NewSection("settings")
 
-local ScreenGui = Instance.new("ScreenGui")
-local TdFrame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local UIGradient = Instance.new("UIGradient")
-local TextButton = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-
---Properties:
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-TdFrame.Name = "TdFrame"
-TdFrame.Parent = ScreenGui
-TdFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TdFrame.Position = UDim2.new(0.453781545, 0, 0.393028855, 0)
-TdFrame.Size = UDim2.new(0.139625087, 0, 0.319711506, 0)
-TdFrame.Active = true
-TdFrame.Draggable = true
-
-UICorner.Parent = TdFrame
-
-UIGradient.Parent = TdFrame
-
-TextButton.Parent = TdFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(123, 255, 15)
-TextButton.Position = UDim2.new(0.0462962911, 0, 0.334586501, 0)
-TextButton.Size = UDim2.new(0.902777731, 0, 0.270676732, 0)
-TextButton.Font = Enum.Font.Bangers
-TextButton.Text = "Activate!"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-
-UICorner_2.Parent = TextButton
-
--- Scripts:
-
-local function XCRCW_fake_script() -- TdFrame.LocalScript 
-	local script = Instance.new('LocalScript', TdFrame)
-
-	local Plr = game.Players.LocalPlayer
-	
-	Plr:GetMouse().KeyDown:Connect(function(L)
-		if L == "l" then
-			script.Parent.Visible = false
-		end
-		
-	end)
-	
+Section:NewButton("auto clicks", "", function()
+   while wait() do
+local A_1 = "swingKatana"
+local Event = game:GetService("Players").Sh1z3Ns.ninjaEvent
+Event:FireServer(A_1)
 end
-coroutine.wrap(XCRCW_fake_script)()
-local function JINVVT_fake_script() -- TdFrame.LocalScript 
-	local script = Instance.new('LocalScript', TdFrame)
-
-	local Plr = game.Players.LocalPlayer
-	
-	Plr:GetMouse().KeyDown:Connect(function(L)
-		if L == "l" then
-			script.Parent.Visible = true
-		end
-		
-	end)
-	
-end
-coroutine.wrap(JINVVT_fake_script)()
-
-TextButton.MouseButton1Down:connect(function()
-	game.Lighting.FogEnd = 999999988484154753734934528
-	game.Lighting.FogStart = 0
 end)
